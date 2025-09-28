@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-22.04.
     permissions:
       contents: read
 
@@ -27,7 +27,7 @@ jobs:
 
       # ✅ Docker 이미지 빌드
       - name: Build Docker image
-        run: docker build -t centralServer .
+        run: docker build -t centralserver .
 
       # ✅ Docker Hub 로그인
       - name: Login to Docker Hub
@@ -36,5 +36,5 @@ jobs:
       # ✅ 이미지 태깅 & 푸시
       - name: Push Docker image
         run: |
-          docker tag centralServer davidjk522/centralServer:latest
-          docker push davidjk522/centralServer:latest
+          docker tag centralserver davidjk522/CentralServer:latest
+          docker push davidjk522/CentralServer:latest
