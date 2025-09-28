@@ -44,7 +44,7 @@ jobs:
           docker tag centralserver davidjk522/centralserver:latest
           docker push davidjk522/centralserver:latest
 
-      # 8️⃣ 원격 서버에 SSH 접속 후 Docker Compose 배포
+      # 8️⃣ 원격 서버에 SSH 접속 후 Docker Compose 배포 (MongoDB 제외)
       - name: Deploy with Docker Compose
         uses: appleboy/ssh-action@v0.1.9
         with:
