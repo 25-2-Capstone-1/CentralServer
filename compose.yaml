@@ -1,10 +1,8 @@
-version: '3.9'
-
 services:
   demo-app:
     image: centralserver:latest   # 미리 빌드한 Spring Boot jar를 사용
     build:
-      context: .
+      context: ./actions-runner/deploy
       dockerfile: Dockerfile
     container_name: centralserver
     ports:

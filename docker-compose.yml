@@ -1,9 +1,8 @@
-version: '3.9'
 
 services:
   demo-app:
     build:
-      context: .
+      context: ./actions-runner/deploy
       dockerfile: Dockerfile
     image: centralserver:latest
     container_name: centralserver
