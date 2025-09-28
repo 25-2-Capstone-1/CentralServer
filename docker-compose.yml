@@ -1,31 +1,10 @@
-
 services:
   demo-app:
     build:
-      context: ./actions-runner/deploy
+      context: .
       dockerfile: Dockerfile
-    image: centralserver:latest
     container_name: centralserver
     ports:
       - "8081:8081"
     environment:
       - SPRING_PROFILES_ACTIVE=default
-    restart: unless-stopped
-
-# MongoDB는 아직 연결하지 않으므로 주석 처리
-# 나중에 추가할 경우 주석 해제 후 연결 가능
-# mongodb:
-#   image: mongo:latest
-#   container_name: central-mongo
-#   environment:
-#     MONGO_INITDB_DATABASE: mydatabase
-#     MONGO_INITDB_ROOT_USERNAME: root
-#     MONGO_INITDB_ROOT_PASSWORD: secret
-#   ports:
-#     - "27017:27017"
-#   networks:
-#     - demo-network
-#
-#networks:
-#  demo-network:
-#    driver: bridge
