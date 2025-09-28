@@ -2,6 +2,7 @@
 FROM gradle:8-jdk21 AS builder
 WORKDIR /app
 COPY . .
+RUN chmod +x ./gradlew
 RUN gradle build -x test
 
 # Package stage
