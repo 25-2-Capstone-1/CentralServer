@@ -1,9 +1,12 @@
+version: '3.8'
+
 services:
-  mongodb:
+  central-mongo:
     image: 'mongo:latest'
+    container_name: central-mongo
     environment:
-      - 'MONGO_INITDB_DATABASE=mydatabase'
-      - 'MONGO_INITDB_ROOT_PASSWORD=secret'
-      - 'MONGO_INITDB_ROOT_USERNAME=root'
+      MONGO_INITDB_DATABASE: demo          # 기존 properties의 DB 이름
+      MONGO_INITDB_ROOT_USERNAME: admin    # properties의 username
+      MONGO_INITDB_ROOT_PASSWORD: adminpwdadminpwd1234  # properties의 password
     ports:
-      - '27017'
+      - '27017:27017'
