@@ -1,7 +1,7 @@
 services:
   demo-app:
     build:
-      context: .
+      context: ./actions-runner/deploy
       dockerfile: Dockerfile
     container_name: centralserver
     ports:
