@@ -4,7 +4,7 @@ services:
     build:
       context: ./actions-runner/deploy
       dockerfile: Dockerfile
-    container_name: centralserver
+    container_name: davidjk522/centralserver:latest
     ports:
       - "8081:8081"
     environment:
