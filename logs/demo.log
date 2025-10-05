@@ -1,5 +1,5 @@
-2025-10-06T00:03:21.653+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
-2025-10-06T00:03:21.666+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-06T00:03:21.653+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
+2025-10-06T00:03:21.666+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
 2025-10-06T00:03:21.850+09:00  INFO 28244 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2025-10-06T00:03:21.852+09:00  INFO 28244 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2025-10-06T00:03:24.236+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
@@ -10,15 +10,15 @@
 2025-10-06T00:03:25.259+09:00  INFO 28244 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
 2025-10-06T00:03:25.310+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-10-06T00:03:25.518+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-10-06T00:03:25.539+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Started DemoApplication in 4.856 seconds (process running for 15.5)
+2025-10-06T00:03:25.539+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 4.856 seconds (process running for 15.5)
 2025-10-06T00:04:05.132+09:00  INFO 28244 --- [demo] [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-10-06T00:04:05.132+09:00  INFO 28244 --- [demo] [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-10-06T00:04:05.135+09:00  INFO 28244 --- [demo] [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2025-10-06T00:19:52.045+09:00  INFO 28244 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
 2025-10-06T00:19:52.049+09:00  INFO 28244 --- [demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-10-06T00:19:52.079+09:00  INFO 28244 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-10-06T00:19:58.437+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
-2025-10-06T00:19:58.438+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-06T00:19:58.437+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
+2025-10-06T00:19:58.438+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
 2025-10-06T00:19:59.296+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
 2025-10-06T00:19:59.301+09:00  INFO 28244 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2025-10-06T00:19:59.302+09:00  INFO 28244 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
@@ -27,13 +27,13 @@
 2025-10-06T00:19:59.647+09:00  INFO 28244 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
 2025-10-06T00:19:59.667+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-10-06T00:19:59.697+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-10-06T00:19:59.703+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Started DemoApplication in 1.38 seconds (process running for 1009.662)
+2025-10-06T00:19:59.703+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 1.38 seconds (process running for 1009.662)
 2025-10-06T00:19:59.707+09:00  INFO 28244 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2025-10-06T00:20:01.100+09:00  INFO 28244 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
 2025-10-06T00:20:01.102+09:00  INFO 28244 --- [demo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-10-06T00:20:01.119+09:00  INFO 28244 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-10-06T00:20:01.296+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
-2025-10-06T00:20:01.297+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-06T00:20:01.296+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
+2025-10-06T00:20:01.297+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
 2025-10-06T00:20:01.782+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
 2025-10-06T00:20:01.784+09:00  INFO 28244 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2025-10-06T00:20:01.784+09:00  INFO 28244 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
@@ -42,13 +42,13 @@
 2025-10-06T00:20:01.982+09:00  INFO 28244 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
 2025-10-06T00:20:01.995+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-10-06T00:20:02.016+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-10-06T00:20:02.024+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Started DemoApplication in 0.809 seconds (process running for 1011.983)
+2025-10-06T00:20:02.024+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 0.809 seconds (process running for 1011.983)
 2025-10-06T00:20:02.026+09:00  INFO 28244 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2025-10-06T00:34:07.689+09:00  INFO 28244 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
 2025-10-06T00:34:07.693+09:00  INFO 28244 --- [demo] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-10-06T00:34:07.729+09:00  INFO 28244 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-10-06T00:34:13.420+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
-2025-10-06T00:34:13.420+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-06T00:34:13.420+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 28244 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
+2025-10-06T00:34:13.420+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
 2025-10-06T00:34:14.125+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
 2025-10-06T00:34:14.129+09:00  INFO 28244 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2025-10-06T00:34:14.129+09:00  INFO 28244 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
@@ -57,7 +57,7 @@
 2025-10-06T00:34:14.393+09:00  INFO 28244 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
 2025-10-06T00:34:14.411+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-10-06T00:34:14.436+09:00  INFO 28244 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-10-06T00:34:14.442+09:00  INFO 28244 --- [demo] [restartedMain] com.CentralServer.demo.DemoApplication   : Started DemoApplication in 1.097 seconds (process running for 1864.399)
+2025-10-06T00:34:14.442+09:00  INFO 28244 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 1.097 seconds (process running for 1864.399)
 2025-10-06T00:34:14.445+09:00  INFO 28244 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2025-10-06T00:34:23.702+09:00  WARN 21784 --- [demo] [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
@@ -74,3 +74,50 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 2025-10-06T00:34:27.380+09:00  INFO 21784 --- [demo] [Test worker] c.C.demo.DemoApplicationTests            : Started DemoApplicationTests in 4.932 seconds (process running for 7.752)
 2025-10-06T00:39:57.767+09:00  INFO 28244 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-10-06T00:39:57.777+09:00  INFO 28244 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-06T01:24:06.120+09:00  INFO 860 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 860 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
+2025-10-06T01:24:06.127+09:00  INFO 860 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-06T01:24:06.279+09:00  INFO 860 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-06T01:24:06.280+09:00  INFO 860 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-06T01:24:08.727+09:00  INFO 860 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-06T01:24:08.759+09:00  INFO 860 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-06T01:24:08.760+09:00  INFO 860 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-06T01:24:08.859+09:00  INFO 860 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-06T01:24:08.860+09:00  INFO 860 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2543 ms
+2025-10-06T01:24:09.835+09:00  INFO 860 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-10-06T01:24:09.909+09:00  INFO 860 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-06T01:24:10.098+09:00  WARN 860 --- [demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-06T01:24:10.123+09:00  INFO 860 --- [demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-06T01:24:10.160+09:00 ERROR 860 --- [demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-10-06T01:24:34.291+09:00  INFO 32512 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.2 with PID 32512 (D:\demo\build\classes\java\main started by jaekyungkim in D:\demo)
+2025-10-06T01:24:34.295+09:00  INFO 32512 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-06T01:24:34.401+09:00  INFO 32512 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-06T01:24:34.402+09:00  INFO 32512 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-06T01:24:36.232+09:00  INFO 32512 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-06T01:24:36.269+09:00  INFO 32512 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-06T01:24:36.269+09:00  INFO 32512 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-06T01:24:36.361+09:00  INFO 32512 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-06T01:24:36.361+09:00  INFO 32512 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1914 ms
+2025-10-06T01:24:37.310+09:00  INFO 32512 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-10-06T01:24:37.402+09:00  INFO 32512 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-06T01:24:37.561+09:00  INFO 32512 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-06T01:24:37.580+09:00  INFO 32512 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 4.162 seconds (process running for 5.777)
+2025-10-06T01:24:52.820+09:00  INFO 32512 --- [demo] [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-06T01:24:52.821+09:00  INFO 32512 --- [demo] [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-06T01:24:52.824+09:00  INFO 32512 --- [demo] [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-06T01:25:02.474+09:00  INFO 32512 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-06T01:25:02.493+09:00  INFO 32512 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
