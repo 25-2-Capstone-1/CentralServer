@@ -1,4 +1,4 @@
-package com.CentralServer.demo.Service;
+package com.CentralServer.demo.service;
 
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;

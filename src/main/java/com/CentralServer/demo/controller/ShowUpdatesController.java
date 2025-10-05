@@ -1,6 +1,6 @@
-package com.CentralServer.demo.Controller;
+package com.CentralServer.demo.controller;
 
-import com.CentralServer.demo.Service.OpenApiUpdateService;
+import com.CentralServer.demo.service.OpenApiUpdateService;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
 
