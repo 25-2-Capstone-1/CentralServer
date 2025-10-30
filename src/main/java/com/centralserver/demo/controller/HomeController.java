@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping("/")
     public String home() {
-        return "home_start_page"; // This will render the home.html template
+        return "home_start_page";
+        // This will render the home.html template
     }
 }
