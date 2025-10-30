@@ -1,0 +1,60 @@
+package com.centralserver.demo.domain.user.entity;
+
+import com.centralserver.demo.domain.user.dto.UserRequestDTO;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import java.time.LocalDateTime;
+
+@Entity
+@EntityListeners(AuditingEntityListener.class)
+@Table(name = "users")
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserEntity {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "userEmail", unique = true, nullable = false, updatable = false)
+    private String userEmail;
+
+    @Column(name = "password", nullable = false)
+    private String password;
+
+    @Column(name = "username", nullable = false)
+    private String username;
+
+    @Column(name = "nickname", unique = true, nullable = false)
+    private String nickname;
+
+    @Column(name = "phoneNumber")
+    private String phoneNumber;
+
+    @Column(name = "is_lock", nullable = false)
+    private Boolean isLock = false;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "role_type", nullable = false)
+    private UserRoleType roleType =  UserRoleType.USER;
+
+    @CreatedDate
+    @Column(name = "created_date", updatable = false)
+    private LocalDateTime createdDate;
+
+    @LastModifiedDate
+    @Column(name = "updated_date")
+    private LocalDateTime updatedDate;
+
+    public void updateUser(UserRequestDTO dto) {
+        this.nickname = dto.getNickname();
+        this.phoneNumber = dto.getPhoneNumber();
+    }
+}
