@@ -26,9 +26,9 @@ public class RouteController {
         System.out.println("추천 요청: " + request);
 
         // 2️⃣ JSON 파일 2개 읽기 (src/main/resources/data/ 경로)
-        RecommendRouteDTO route1 = loadRouteFromJson("data/routes/route1.json");
-        RecommendRouteDTO route2 = loadRouteFromJson("data/routes/route2.json");
-        RecommendRouteDTO route3 = loadRouteFromJson("data/routes/route3.json");
+        RecommendRouteDTO route1 = loadRouteFromJson("data/routes/RecommendRoute/RecommendRoute1.json");
+        RecommendRouteDTO route2 = loadRouteFromJson("data/routes/RecommendRoute/RecommendRoute2.json");
+        RecommendRouteDTO route3 = loadRouteFromJson("data/routes/RecommendRoute/RecommendRoute3.json");
 
 
         // 3️⃣ 여러 개의 추천 경로 반환
@@ -48,7 +48,7 @@ public class RouteController {
 //    @PostMapping("/result")
 //    public ResultRouteDTO getSelectedRoute(@RequestBody RouteRequestDTO request) throws IOException {
 //        // 사용자가 선택한 경로를 기준으로 최종 경로를 응답하는 예시
-//        RecommendRouteDTO selectedRoute = loadRouteFromJson("data/route1.json");
+//        RecommendRouteDTO selectedRoute = loadRouteFromJson("data/RecommendRoute1.json");
 //
 //        ResultRouteDTO result = new ResultRouteDTO();
 //        result.setRoute(selectedRoute);

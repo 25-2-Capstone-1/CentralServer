@@ -1,7 +1,7 @@
 package com.centralserver.demo.domain.user.service;
 
 import com.centralserver.demo.domain.jwt.service.JwtService;
-import com.centralserver.demo.domain.user.dto.MessageResponseDTO;
+import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
 import com.centralserver.demo.domain.user.dto.UserRequestDTO;
 import com.centralserver.demo.domain.user.dto.UserResponseDTO;
 import com.centralserver.demo.domain.user.dto.UserUpdateResponseDTO;
@@ -35,13 +35,13 @@ public class UserService implements UserDetailsService {
     // 자체 로그인 회원 가입 (존재 여부)
     @Transactional(readOnly = true)
     public Boolean existUser(UserRequestDTO dto) {
-        return userRepository.existsByUserEmail(dto.getUsername());
+        return userRepository.existsByUserEmail(dto.getUserEmail());
     }
 
     // 자체 로그인 회원 가입
     @Transactional
     public Long addUser(UserRequestDTO dto) {
-        if (userRepository.existsByUserEmail(dto.getUsername())) {
+        if (userRepository.existsByUserEmail(dto.getUserEmail())) {
             throw new IllegalArgumentException("이미 유저가 존재합니다.");
         }
 

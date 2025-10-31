@@ -1,4 +1,4 @@
-package com.centralserver.demo.api.controller;
+package com.centralserver.demo.api.advice;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
