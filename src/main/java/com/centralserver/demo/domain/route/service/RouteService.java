@@ -2,6 +2,8 @@ package com.centralserver.demo.domain.route.service;
 
 import com.centralserver.demo.domain.route.dto.RecommendRouteDTO;
 import com.centralserver.demo.domain.route.dto.RouteRequestDTO;
+import com.centralserver.demo.domain.route.repository.RecommendedRouteRepository;
+import com.centralserver.demo.domain.route.repository.SelectedRouteRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -16,6 +18,13 @@ import java.util.List;
 public class RouteService {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
+    private final RecommendedRouteRepository recommendedRouteRepository;
+    private final SelectedRouteRepository selectedRouteRepository;
+
+    public RouteService(RecommendedRouteRepository recommendedRouteRepository, SelectedRouteRepository selectedRouteRepository) {
+        this.recommendedRouteRepository = recommendedRouteRepository;
+        this.selectedRouteRepository = selectedRouteRepository;
+    }
 
     @Transactional
     public List<RecommendRouteDTO> recommendRoutes(@RequestBody RouteRequestDTO request) throws IOException {

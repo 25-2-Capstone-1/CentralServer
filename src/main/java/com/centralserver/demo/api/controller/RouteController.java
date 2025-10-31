@@ -2,6 +2,7 @@ package com.centralserver.demo.api.controller;
 
 import com.centralserver.demo.domain.route.dto.RecommendRouteDTO;
 import com.centralserver.demo.domain.route.dto.RouteRequestDTO;
+import com.centralserver.demo.domain.route.repository.SelectedRouteRepository;
 import com.centralserver.demo.domain.route.service.RouteService;
 
 import org.springframework.web.bind.annotation.PostMapping;
