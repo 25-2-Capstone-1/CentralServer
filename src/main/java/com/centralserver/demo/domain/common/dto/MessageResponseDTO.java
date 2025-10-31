@@ -1,4 +1,4 @@
-package com.centralserver.demo.domain.user.dto;
+package com.centralserver.demo.domain.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

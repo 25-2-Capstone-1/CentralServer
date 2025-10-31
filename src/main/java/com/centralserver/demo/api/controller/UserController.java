@@ -1,6 +1,7 @@
 package com.centralserver.demo.api.controller;
 
 import com.centralserver.demo.domain.common.dto.ApiResponseDTO;
+import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
 import com.centralserver.demo.domain.user.dto.*;
 
 import com.centralserver.demo.domain.user.service.UserService;
