@@ -99,7 +99,7 @@ public class SecurityConfig {
                         .addLogoutHandler(new RefreshTokenLogoutHandler(jwtService)));
 
         http
-                .addFilterBefore(new JWTFilter(), LogoutFilter.class);
+                .addFilterBefore(new JWTFilter(),  UsernamePasswordAuthenticationFilter.class);
 
         http
                 .addFilterBefore(new LoginFilter(authenticationManager(authenticationConfiguration), loginSuccessHandler ), UsernamePasswordAuthenticationFilter.class);
@@ -127,6 +127,8 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.PUT, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.DELETE, "/user").hasRole(UserRoleType.USER.name())
+                        .requestMatchers(HttpMethod.POST, "/route/recommend").hasRole(UserRoleType.USER.name())
+                        //.requestMatchers(HttpMethod.POST, "/route/recommend").permitAll()
                         .anyRequest().authenticated()
                 );
 
