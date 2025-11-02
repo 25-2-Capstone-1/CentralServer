@@ -2,6 +2,7 @@ package com.centralserver.demo.domain.route.service;
 
 import com.centralserver.demo.domain.route.dto.RecommendRouteDTO;
 import com.centralserver.demo.domain.route.dto.RouteRequestDTO;
+import com.centralserver.demo.domain.route.entity.RecommendedRoute;
 import com.centralserver.demo.domain.route.repository.RecommendedRouteRepository;
 import com.centralserver.demo.domain.route.repository.SelectedRouteRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -47,6 +48,24 @@ public class RouteService {
         ClassPathResource resource = new ClassPathResource(path);
         return objectMapper.readValue(resource.getInputStream(), RecommendRouteDTO.class);
     }
+
+//    @Transactional
+//    public void createSampleRoute() {
+//
+//        RecommendedRoute route = RecommendedRoute.builder()
+//                .routeName("한강 자전거 코스")
+//                .distance(5.2)
+//                .estimatedTime(1800)
+//                .difficulty("easy")
+//                .description("한강을 따라 달리는 자전거 코스입니다.")
+//                .startPointJson("{\"lat\":37.55,\"lng\":126.97}")
+//                .endPointJson("{\"lat\":37.56,\"lng\":127.0}")
+//                .waypointsJson("[{\"lat\":37.551,\"lng\":126.98},{\"lat\":37.552,\"lng\":126.99}]")
+//                .build();
+//
+//        recommendedRouteRepository.save(route);
+//    }
+
 
     //      선택된 내용 db 저장 로직 제거
 //    @PostMapping("/result")

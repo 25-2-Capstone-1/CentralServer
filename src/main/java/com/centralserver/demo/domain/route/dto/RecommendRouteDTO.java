@@ -21,13 +21,4 @@ public class RecommendRouteDTO {
     private String difficulty;       // 난이도 (easy, medium, hard)
     private String description;      // 설명
 
-    @Getter
-    @Setter
-    @Builder
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class Point {
-        private double lat;
-        private double lng;
-    }
 }

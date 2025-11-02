@@ -1462,3 +1462,54 @@ java.io.FileNotFoundException: class path resource [data/routes/RecommendRoute/R
 2025-10-31T22:47:36.946+09:00  INFO 23192 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-10-31T22:47:36.988+09:00  INFO 23192 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-10-31T22:47:37.022+09:00  INFO 23192 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:26:25.036+09:00  INFO 23448 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 23448 (C:\Users\parkj\OneDrive\문서\GitHub\CentralServer\build\classes\java\main started by parkj in C:\Users\parkj\OneDrive\문서\GitHub\CentralServer)
+2025-10-31T23:26:25.040+09:00  INFO 23448 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:26:25.144+09:00  INFO 23448 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:26:25.144+09:00  INFO 23448 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:26:26.926+09:00  INFO 23448 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:26:27.294+09:00  INFO 23448 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 353 ms. Found 2 JPA repository interfaces.
+2025-10-31T23:26:28.728+09:00  INFO 23448 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-31T23:26:28.765+09:00  INFO 23448 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:26:28.769+09:00  INFO 23448 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:26:28.869+09:00  INFO 23448 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:26:28.869+09:00  INFO 23448 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3691 ms
+2025-10-31T23:26:29.226+09:00  INFO 23448 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:26:29.379+09:00  INFO 23448 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:26:29.476+09:00  INFO 23448 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:26:30.140+09:00  INFO 23448 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:26:30.206+09:00  INFO 23448 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:26:32.654+09:00  INFO 23448 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11526574
+2025-10-31T23:26:32.658+09:00  INFO 23448 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:26:33.207+09:00  INFO 23448 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:26:34.681+09:00  INFO 23448 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:26:37.469+09:00  INFO 23448 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:26:38.153+09:00  WARN 23448 --- [demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeController' defined in file [C:\Users\parkj\OneDrive\문서\GitHub\CentralServer\build\classes\java\main\com\centralserver\demo\api\controller\RouteController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'routeService' defined in file [C:\Users\parkj\OneDrive\문서\GitHub\CentralServer\build\classes\java\main\com\centralserver\demo\domain\route\service\RouteService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.centralserver.demo.domain.route.repository.RecommendedRouteRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-31T23:26:38.153+09:00  INFO 23448 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:26:38.158+09:00  INFO 23448 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T23:26:38.228+09:00  INFO 23448 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:26:38.233+09:00  INFO 23448 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-31T23:26:38.251+09:00  INFO 23448 --- [demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-31T23:26:38.286+09:00 ERROR 23448 --- [demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.centralserver.demo.domain.route.service.RouteService required a bean of type 'com.centralserver.demo.domain.route.repository.RecommendedRouteRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.centralserver.demo.domain.route.repository.RecommendedRouteRepository' in your configuration.
+
