@@ -1,0 +1,9 @@
+{
+  "myPoint": { "lat": 37.3948, "lng": 127.1111 },
+  "startPoint": { "lat": 37.3923, "lng": 127.1039 },
+  "endPoint": { "lat": 37.3987, "lng": 127.1205 },
+  "targetDistance": 1800.0,
+  "slope": 4,
+  "trafficLights": 8,
+  "trafficCongestion": 3
+}

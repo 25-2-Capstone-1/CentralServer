@@ -1,7 +1,11 @@
 package com.centralserver.demo;
 
+import com.centralserver.demo.domain.route.repository.RecommendedRouteRepository;
+import com.centralserver.demo.domain.route.service.RouteService;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
@@ -14,5 +18,10 @@ public class DemoApplication {
         System.out.println("Central Server is starting...DemoApplication.java");
         SpringApplication.run(DemoApplication.class, args);
     }
+
+//    @Bean
+//    CommandLineRunner init(RouteService routeService) {
+//        return args -> {routeService.createSampleRoute();};
+//    }
 
 }
