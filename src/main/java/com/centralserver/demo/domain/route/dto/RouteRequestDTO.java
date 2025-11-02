@@ -8,6 +8,4 @@ public record RouteRequestDTO(
         int slope,               // 경사도 선호도 (0~10)
         int trafficLights,       // 신호등 혼잡도 선호도 (0~10)
         int trafficCongestion    // 교통 혼잡도 선호도 (0~10)
-) {
-    public record Point(double lat, double lng) {}
-}
+) { }
