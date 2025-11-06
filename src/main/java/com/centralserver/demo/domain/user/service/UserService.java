@@ -2,9 +2,8 @@ package com.centralserver.demo.domain.user.service;
 
 import com.centralserver.demo.domain.jwt.service.JwtService;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
-import com.centralserver.demo.domain.user.dto.UserRequestDTO;
-import com.centralserver.demo.domain.user.dto.UserResponseDTO;
-import com.centralserver.demo.domain.user.dto.UserUpdateResponseDTO;
+import com.centralserver.demo.domain.user.dto.*;
+import com.centralserver.demo.domain.user.dto.UserEmailDTO;
 import com.centralserver.demo.domain.user.entity.UserEntity;
 import com.centralserver.demo.domain.user.entity.UserRoleType;
 import com.centralserver.demo.domain.user.repository.UserRepository;
@@ -136,5 +135,33 @@ public class UserService implements UserDetailsService {
 
         return new UserResponseDTO(userEmail, entity.getNickname(), entity.getUsername(), entity.getPhoneNumber());
     }
+
+    //유저 개별 정보 조회
+    @Transactional(readOnly = true)
+    public UserEmailDTO readUserEmail() {
+        String userEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+        return new UserEmailDTO(userEmail);
+    }
+
+    @Transactional(readOnly = true)
+    public UsernameDTO readUsername() {
+        String userEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+
+        UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
+                .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
+
+        return new UsernameDTO(entity.getUsername());
+    }
+
+    @Transactional(readOnly = true)
+    public UserIdDTO readUserId() {
+        String userEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+
+        UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
+                .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
+
+        return new UserIdDTO(entity.getId());
+    }
+
 
 }

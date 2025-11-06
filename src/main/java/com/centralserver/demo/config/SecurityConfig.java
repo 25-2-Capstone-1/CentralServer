@@ -128,7 +128,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.PUT, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.DELETE, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.POST, "/route/recommend").hasRole(UserRoleType.USER.name())
-                        //.requestMatchers(HttpMethod.POST, "/route/recommend").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/user/**").hasRole(UserRoleType.USER.name())
                         .anyRequest().authenticated()
                 );
 
