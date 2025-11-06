@@ -56,12 +56,6 @@ public class UserController {
                 .body(ApiResponseDTO.success(responseData));
     }
 
-    // 유저 정보
-    @GetMapping(value = "/user", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public UserResponseDTO userMeApi() {
-        return userService.readUser();
-    }
-
     // 유저 수정 (자체 로그인 유저만)
     @PutMapping(value = "/user", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ApiResponseDTO<UserUpdateResponseDTO>> updateUserApi(
@@ -88,6 +82,32 @@ public class UserController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(ApiResponseDTO.success(responseData)); // 감싸서 리턴
+    }
+
+    // 유저 정보 GETMAPPING 추가
+
+    // 유저 정보
+    @GetMapping(value = "/user", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public UserResponseDTO userMeApi() {
+        return userService.readUser();
+    }
+
+    // 유저 이메일 조회
+    @GetMapping("/user/userEmail")
+    public UserEmailDTO getUserEmail() {
+        return userService.readUserEmail(); // 서비스에서 현재 유저 이메일 가져오기
+    }
+
+    // 유저 이름 조회
+    @GetMapping("/user/username")
+    public UsernameDTO getUserUsername() {
+        return userService.readUsername();
+    }
+
+    // 유저 ID 조회
+    @GetMapping("/user/userId")
+    public UserIdDTO  getUserId() {
+        return userService.readUserId();
     }
 
 }
