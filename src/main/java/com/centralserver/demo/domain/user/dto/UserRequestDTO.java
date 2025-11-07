@@ -22,13 +22,13 @@ public class UserRequestDTO {
     @NotBlank(groups = {onCreate.class, onPasswordChange.class}) @Size(min = 4, max = 20)
     private String password;
 
-    @NotBlank(groups = {onCreate.class, onUpdate.class}) @Size(min = 4, max = 20)
+    @NotBlank(groups = {onCreate.class}) @Size(min = 4, max = 20)
     private String username;
 
     @NotBlank(groups = {onCreate.class, onUpdate.class}) @Size(min = 4, max = 20)
     private String nickname;
 
-    @NotBlank(groups = {onCreate.class, onUpdate.class})
+    @NotBlank(groups = {onCreate.class})
     @Pattern(regexp = "^010-\\d{4}-\\d{4}$", message = "전화번호 형식은 010-XXXX-XXXX 이어야 합니다.")
     private String phoneNumber;
 }
