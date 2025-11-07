@@ -163,5 +163,28 @@ public class UserService implements UserDetailsService {
         return new UserIdDTO(entity.getId());
     }
 
+    @Transactional
+    public MessageResponseDTO updatePassword(PasswordChangeDTO dto) throws AccessDeniedException {
+        String userEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+
+        // 1. 현재 로그인된 유저 조회
+        UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
+                .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
+
+        // 2. 기존 비밀번호 확인
+        if (!passwordEncoder.matches(dto.getCurrentPassword(), entity.getPassword())) {
+            throw new AccessDeniedException("기존 비밀번호가 일치하지 않습니다.");
+        }
+
+        // 3. 새 비밀번호로 업데이트
+        entity.setPassword(passwordEncoder.encode(dto.getNewPassword()));
+        userRepository.save(entity);
+
+        return MessageResponseDTO.builder()
+                .message("비밀번호가 성공적으로 변경되었습니다.")
+                .build();
+    }
+
+
 
 }

@@ -56,13 +56,25 @@ public class UserController {
                 .body(ApiResponseDTO.success(responseData));
     }
 
-    // 유저 수정 (자체 로그인 유저만)
+    // 유저 닉네임 수정 (자체 로그인 유저만)
     @PutMapping(value = "/user", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ApiResponseDTO<UserUpdateResponseDTO>> updateUserApi(
-            @Validated(UserRequestDTO.onUpdate.class) @RequestBody UserRequestDTO dto
+            @Validated(UserRequestDTO.onNicknameUpdate.class) @RequestBody UserRequestDTO dto
     ) throws AccessDeniedException {
 
         UserUpdateResponseDTO responseData = userService.updateUser(dto); // 이제 DTO를 반환하게 변경
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(ApiResponseDTO.success(responseData));
+    }
+
+    // 유저 비밀번호 수정
+    @PutMapping(value = "/user/password", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ApiResponseDTO<MessageResponseDTO>> updatePasswordApi( @RequestBody PasswordChangeDTO dto
+    ) throws AccessDeniedException {
+
+        MessageResponseDTO responseData = userService.updatePassword(dto); // 이제 DTO를 반환하게 변경
 
         return ResponseEntity
                 .status(HttpStatus.OK)
