@@ -13,10 +13,10 @@ public class UserRequestDTO {
     public interface onExist {} // 회원 가입시 username 존재 확인
     public interface onCreate {} // 회원 가입시
     public interface onPasswordChange {} // 비밀번호 변경시
-    public interface onUpdate {} // 회원 수정시
+    public interface onNicknameUpdate {} // 회원 수정시
     public interface onDelete {} // 회원 삭제시
 
-    @Email(groups = {onExist.class, onCreate.class, onUpdate.class, onDelete.class})
+    @Email(groups = {onExist.class, onCreate.class, onNicknameUpdate.class, onDelete.class, onPasswordChange.class})
     private String userEmail;
 
     @NotBlank(groups = {onCreate.class, onPasswordChange.class}) @Size(min = 4, max = 20)
@@ -25,7 +25,7 @@ public class UserRequestDTO {
     @NotBlank(groups = {onCreate.class}) @Size(min = 4, max = 20)
     private String username;
 
-    @NotBlank(groups = {onCreate.class, onUpdate.class}) @Size(min = 4, max = 20)
+    @NotBlank(groups = {onCreate.class, onNicknameUpdate.class}) @Size(min = 4, max = 20)
     private String nickname;
 
     @NotBlank(groups = {onCreate.class})
