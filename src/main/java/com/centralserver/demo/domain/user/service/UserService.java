@@ -133,7 +133,7 @@ public class UserService implements UserDetailsService {
         UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
                 .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
 
-        return new UserResponseDTO(userEmail, entity.getNickname(), entity.getUsername(), entity.getPhoneNumber());
+        return new UserResponseDTO(entity.getId(), userEmail, entity.getNickname(), entity.getUsername(), entity.getPhoneNumber());
     }
 
     //유저 개별 정보 조회
