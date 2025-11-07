@@ -56,4 +56,8 @@ public class UserEntity {
     public void updateUser(UserRequestDTO dto) {
         this.nickname = dto.getNickname();
     }
+
+    public void setPassword(String encodedPassword) {
+        this.password = encodedPassword;
+    }
 }
