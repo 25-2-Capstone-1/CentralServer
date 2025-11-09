@@ -104,22 +104,4 @@ public class UserController {
         return userService.readUser();
     }
 
-    // 유저 이메일 조회
-    @GetMapping("/user/userEmail")
-    public UserEmailDTO getUserEmail() {
-        return userService.readUserEmail(); // 서비스에서 현재 유저 이메일 가져오기
-    }
-
-    // 유저 이름 조회
-    @GetMapping("/user/username")
-    public UsernameDTO getUserUsername() {
-        return userService.readUsername();
-    }
-
-    // 유저 ID 조회
-    @GetMapping("/user/userId")
-    public UserIdDTO  getUserId() {
-        return userService.readUserId();
-    }
-
 }
