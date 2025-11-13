@@ -6,6 +6,7 @@ import com.centralserver.demo.domain.user.dto.*;
 import com.centralserver.demo.domain.user.entity.UserEntity;
 import com.centralserver.demo.domain.user.entity.UserRoleType;
 import com.centralserver.demo.domain.user.repository.UserRepository;
+import com.centralserver.demo.security.CustomUserDetails;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
@@ -65,12 +66,12 @@ public class UserService implements UserDetailsService {
         UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
                 .orElseThrow(() -> new UsernameNotFoundException(userEmail));
 
-        return User.builder()
-                .username(entity.getUserEmail())
-                .password(entity.getPassword())
-                .roles(entity.getRoleType().name())
-                .accountLocked(entity.getIsLock())
-                .build();
+        // 🔥 반드시 CustomUserDetails 사용!!
+        return new CustomUserDetails(
+                entity.getId(),
+                entity.getUserEmail(),
+                "ROLE_" + entity.getRoleType().name()
+        );
     }
 
     // 자체 로그인 회원 정보 수정

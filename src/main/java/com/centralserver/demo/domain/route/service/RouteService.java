@@ -49,33 +49,4 @@ public class RouteService {
         return objectMapper.readValue(resource.getInputStream(), RecommendRouteDTO.class);
     }
 
-//    @Transactional
-//    public void createSampleRoute() {
-//
-//        RecommendedRoute route = RecommendedRoute.builder()
-//                .routeName("한강 자전거 코스")
-//                .distance(5.2)
-//                .estimatedTime(1800)
-//                .difficulty("easy")
-//                .description("한강을 따라 달리는 자전거 코스입니다.")
-//                .startPointJson("{\"lat\":37.55,\"lng\":126.97}")
-//                .endPointJson("{\"lat\":37.56,\"lng\":127.0}")
-//                .waypointsJson("[{\"lat\":37.551,\"lng\":126.98},{\"lat\":37.552,\"lng\":126.99}]")
-//                .build();
-//
-//        recommendedRouteRepository.save(route);
-//    }
-
-
-    //      선택된 내용 db 저장 로직 제거
-//    @PostMapping("/result")
-//    public ResultRouteDTO getSelectedRoute(@RequestBody RouteRequestDTO request) throws IOException {
-//        // 사용자가 선택한 경로를 기준으로 최종 경로를 응답하는 예시
-//        RecommendRouteDTO selectedRoute = loadRouteFromJson("data/RecommendRoute1.json");
-//
-//        ResultRouteDTO result = new ResultRouteDTO();
-//        result.setRoute(selectedRoute);
-//        result.setMessage("선택된 경로입니다.");
-//        return result;
-//    }
 }

@@ -20,6 +20,7 @@ public class JwtService {
     }
 
     // 소셜 로그인 성공 후 쿠키(Refresh) -> 헤더 방식으로 응답
+    // 소셜 로그인 성공 후 쿠키(Refresh) -> 헤더 방식으로 응답
     @Transactional
     public JWTResponseDTO cookie2Header(
             HttpServletRequest request,
@@ -52,13 +53,13 @@ public class JwtService {
         }
 
         // 정보 추출
+        Long userId = JWTUtil.getUserId(refreshToken);
         String userEmail = JWTUtil.getUserEmail(refreshToken);
         String role = JWTUtil.getRole(refreshToken);
 
         // 토큰 생성
-        String newAccessToken = JWTUtil.createJWT(userEmail, role, true);
-        String newRefreshToken = JWTUtil.createJWT(userEmail, role, false);
-
+        String newAccessToken = JWTUtil.createJWT(userId, userEmail, role, true);
+        String newRefreshToken = JWTUtil.createJWT(userId, userEmail, role, false);
         // 기존 Refresh 토큰 DB 삭제 후 신규 추가
         RefreshEntity newRefreshEntity = RefreshEntity.builder()
                 .userEmail(userEmail)
@@ -98,13 +99,13 @@ public class JwtService {
         }
 
         // 정보 추출
+        Long userId = JWTUtil.getUserId(refreshToken);
         String userEmail = JWTUtil.getUserEmail(refreshToken);
         String role = JWTUtil.getRole(refreshToken);
 
         // 토큰 생성
-        String newAccessToken = JWTUtil.createJWT(userEmail, role, true);
-        String newRefreshToken = JWTUtil.createJWT(userEmail, role, false);
-
+        String newAccessToken = JWTUtil.createJWT(userId, userEmail, role, true);   // ⬅️ 수정
+        String newRefreshToken = JWTUtil.createJWT(userId, userEmail, role, false); // ⬅️ 수정
         // 기존 Refresh 토큰 DB 삭제 후 신규 추가
         RefreshEntity newRefreshEntity = RefreshEntity.builder()
                 .userEmail(userEmail)

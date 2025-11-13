@@ -1,0 +1,17 @@
+{
+  "userId": 1,
+  "title": "북한산 둘레길 힐링 러닝",
+  "startTime": "2025-04-23T09:30:00",
+  "durationSeconds": 4520,
+  "distanceKm": 8.4,
+  "avgPace": "7'05''",
+  "calories": 520,
+  "elevationGain": 120.3,
+  "avgHeartRate": 148,
+  "cadence": 155,
+  "fullAddress": "대한민국 서울특별시 은평구 진관동",
+  "waypointsJson": "[[37.6472,126.9389],[37.6491,126.9422],[37.6513,126.9455]]",
+  "difficulty": "hard",
+  "description": "북한산 둘레길을 따라 오르내리면서 달리는 중급~상급자용 코스.",
+  "bookmark": false
+}

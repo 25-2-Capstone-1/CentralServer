@@ -129,6 +129,10 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.DELETE, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.POST, "/route/recommend").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.GET, "/user/**").hasRole(UserRoleType.USER.name())
+
+                        .requestMatchers("/api/records/**")
+                        .hasRole(UserRoleType.USER.name())
+
                         .anyRequest().authenticated()
                 );
 
@@ -149,16 +153,6 @@ public class SecurityConfig {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return http.build();
-
-
-        //경로별 인가 작업
-        //**필수 수정**
-//        http
-//                .authorizeHttpRequests((auth) -> auth
-//                        .requestMatchers("/").permitAll()
-//                        .requestMatchers("/login", "/", "/join").permitAll()
-//                        .requestMatchers("/admin").hasRole("ADMIN")
-//                        .anyRequest().authenticated());
 
     }
 }

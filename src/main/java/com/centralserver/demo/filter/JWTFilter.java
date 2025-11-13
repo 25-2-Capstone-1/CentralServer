@@ -1,5 +1,6 @@
 package com.centralserver.demo.filter;
 
+import com.centralserver.demo.security.CustomUserDetails;
 import com.centralserver.demo.util.JWTUtil;
 
 import jakarta.servlet.FilterChain;
@@ -37,16 +38,28 @@ public class JWTFilter extends OncePerRequestFilter {
 
         if (JWTUtil.isValid(accessToken, true)) {
 
-            String username = JWTUtil.getUserEmail(accessToken);
+            Long userId = JWTUtil.getUserId(accessToken);
+            String userEmail = JWTUtil.getUserEmail(accessToken);
             String role = JWTUtil.getRole(accessToken);
 
             List<GrantedAuthority> authorities = Collections.singletonList(new SimpleGrantedAuthority(role));
 
-            Authentication auth = new UsernamePasswordAuthenticationToken(username, null, authorities);
+            // 🔥 CustomUserDetails 생성
+            CustomUserDetails userDetails =
+                    new CustomUserDetails(userId, userEmail, role);
+
+            // Spring Security 인증 객체 생성
+            Authentication auth =
+                    new UsernamePasswordAuthenticationToken(
+                            userDetails,
+                            null,
+                            userDetails.getAuthorities()
+                    );
+
             SecurityContextHolder.getContext().setAuthentication(auth);
 
             filterChain.doFilter(request, response);
-
+            return;
         } else {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.setContentType("application/json;charset=UTF-8");

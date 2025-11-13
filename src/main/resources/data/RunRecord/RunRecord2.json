@@ -1,0 +1,17 @@
+{
+  "userId": 1,
+  "title": "올림픽공원 아침 러닝",
+  "startTime": "2025-04-25T06:40:00",
+  "durationSeconds": 3200,
+  "distanceKm": 5.2,
+  "avgPace": "6'10''",
+  "calories": 350,
+  "elevationGain": 8.5,
+  "avgHeartRate": 132,
+  "cadence": 158,
+  "fullAddress": "대한민국 서울특별시 송파구 방이동",
+  "waypointsJson": "[[37.5179,127.1211],[37.5190,127.1255],[37.5212,127.1185]]",
+  "difficulty": "easy",
+  "description": "올림픽공원 내 트랙을 가볍게 도는 아침 러닝.",
+  "bookmark": true
+}

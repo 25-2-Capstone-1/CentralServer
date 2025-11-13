@@ -1,0 +1,17 @@
+{
+  "userId": 1,
+  "title": "한강 야간 러닝",
+  "startTime": "2025-04-27T21:10:00",
+  "durationSeconds": 2840,
+  "distanceKm": 6.8,
+  "avgPace": "6'45''",
+  "calories": 410,
+  "elevationGain": 15.2,
+  "avgHeartRate": 138,
+  "cadence": 162,
+  "fullAddress": "대한민국 서울특별시 마포구 합정동",
+  "waypointsJson": "[[37.5482,126.9113],[37.5511,126.9129],[37.5550,126.9148]]",
+  "difficulty": "medium",
+  "description": "선선한 날씨에 한강을 따라 달린 야간 러닝 코스.",
+  "bookmark": false
+}
