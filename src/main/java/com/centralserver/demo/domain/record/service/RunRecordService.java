@@ -7,8 +7,12 @@ import com.centralserver.demo.domain.record.repository.RunRecordRepository;
 import com.centralserver.demo.domain.user.entity.UserEntity;
 import com.centralserver.demo.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.nio.file.AccessDeniedException;
 import java.util.List;
 
 @Service
@@ -19,13 +23,23 @@ public class RunRecordService {
     private final RunRecordRepository runRecordRepository;
 
     /** 1) 저장(Create) */
-    public RunRecordEntity createRecord(RunRecordRequestDTO dto, Long userId) {
+    public RunRecordEntity createRecord(RunRecordRequestDTO dto) {
 
-        UserEntity user = userRepository.findById(userId)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+        // 1. SecurityContext 에서 이메일 꺼내기
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+        if (auth == null || !auth.isAuthenticated()) {
+            throw new RuntimeException("Unauthorized access.");
+        }
+
+        String sessionUserEmail = auth.getName();
+
+        // 2. 이메일로 유저 조회
+        UserEntity entity = userRepository.findByUserEmailAndIsLock(sessionUserEmail, false)
+                .orElseThrow(() -> new UsernameNotFoundException(sessionUserEmail));
 
         RunRecordEntity record = RunRecordEntity.builder()
-                .user(user)
+                .user(entity)
                 .title(dto.getTitle())
                 .startTime(dto.getStartTime())
                 .durationSeconds(dto.getDurationSeconds())
