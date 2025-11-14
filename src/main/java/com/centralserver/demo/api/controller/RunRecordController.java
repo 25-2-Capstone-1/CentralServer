@@ -2,6 +2,7 @@ package com.centralserver.demo.api.controller;
 
 import com.centralserver.demo.domain.common.dto.ApiResponseDTO;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
+import com.centralserver.demo.domain.record.dto.RunRecordPatchDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.entity.RunRecordEntity;
 import com.centralserver.demo.domain.record.service.RunRecordService;
@@ -79,6 +80,16 @@ public class RunRecordController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(ApiResponseDTO.success(updated));
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<ApiResponseDTO<RunRecordEntity>> patchRecord(
+            @PathVariable Long id,
+            @RequestBody RunRecordPatchDTO request
+    ) throws Exception {
+        RunRecordEntity updated = runRecordService.patchRecord(id, request);
+
+        return ResponseEntity.ok(ApiResponseDTO.success(updated));
     }
 
     /** =========================

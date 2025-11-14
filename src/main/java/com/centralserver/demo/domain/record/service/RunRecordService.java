@@ -1,6 +1,7 @@
 
 package com.centralserver.demo.domain.record.service;
 
+import com.centralserver.demo.domain.record.dto.RunRecordPatchDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.entity.RunRecordEntity;
 import com.centralserver.demo.domain.record.repository.RunRecordRepository;
@@ -111,6 +112,40 @@ public class RunRecordService {
         record.setWaypointsJson(dto.getWaypointsJson());
         record.setDifficulty(dto.getDifficulty());
         record.setDescription(dto.getDescription());
+
+        return runRecordRepository.save(record);
+    }
+
+    public RunRecordEntity patchRecord(Long recordId, RunRecordPatchDTO dto) throws AccessDeniedException {
+
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String email = auth.getName();
+
+        UserEntity user = userRepository.findByUserEmailAndIsLock(email, false)
+                .orElseThrow(() -> new UsernameNotFoundException(email));
+
+        RunRecordEntity record = runRecordRepository.findById(recordId)
+                .orElseThrow(() -> new IllegalArgumentException("Record not found"));
+
+        // 권한 체크
+        if (!record.getUser().getId().equals(user.getId())) {
+            throw new AccessDeniedException("You don't have permission to edit this record.");
+        }
+
+        // ✔ PATCH – null 아닌 값만 업데이트
+        if (dto.getTitle() != null) record.setTitle(dto.getTitle());
+        if (dto.getStartTime() != null) record.setStartTime(dto.getStartTime());
+        if (dto.getDurationSeconds() != null) record.setDurationSeconds(dto.getDurationSeconds());
+        if (dto.getDistanceKm() != null) record.setDistanceKm(dto.getDistanceKm());
+        if (dto.getAvgPace() != null) record.setAvgPace(dto.getAvgPace());
+        if (dto.getCalories() != null) record.setCalories(dto.getCalories());
+        if (dto.getElevationGain() != null) record.setElevationGain(dto.getElevationGain());
+        if (dto.getAvgHeartRate() != null) record.setAvgHeartRate(dto.getAvgHeartRate());
+        if (dto.getCadence() != null) record.setCadence(dto.getCadence());
+        if (dto.getFullAddress() != null) record.setFullAddress(dto.getFullAddress());
+        if (dto.getWaypointsJson() != null) record.setWaypointsJson(dto.getWaypointsJson());
+        if (dto.getDifficulty() != null) record.setDifficulty(dto.getDifficulty());
+        if (dto.getDescription() != null) record.setDescription(dto.getDescription());
 
         return runRecordRepository.save(record);
     }
