@@ -4,6 +4,8 @@ import com.centralserver.demo.domain.common.dto.ApiResponseDTO;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordPatchDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
+import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
+import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
 import com.centralserver.demo.domain.record.entity.RunRecordEntity;
 import com.centralserver.demo.domain.record.service.RunRecordService;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/record")
+@RequestMapping("/records")
 public class RunRecordController {
 
     private final RunRecordService runRecordService;
@@ -26,11 +28,11 @@ public class RunRecordController {
      *  POST /record
      * ========================= */
     @PostMapping
-    public ResponseEntity<ApiResponseDTO<RunRecordEntity>> createRecord(
+    public ResponseEntity<ApiResponseDTO<RunRecordResponseDTO>> createRecord(
             @RequestBody RunRecordRequestDTO request
     ) {
 
-        RunRecordEntity saved = runRecordService.createRecord(request);
+        RunRecordResponseDTO saved = runRecordService.createRecord(request);
 
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -42,9 +44,9 @@ public class RunRecordController {
      *  GET /record/{id}
      * ========================= */
     @GetMapping("/{id}")
-    public ResponseEntity<ApiResponseDTO<RunRecordEntity>> getRecord(@PathVariable Long id) throws Exception {
+    public ResponseEntity<ApiResponseDTO<RunRecordResponseDTO>> getRecord(@PathVariable Long id) throws Exception {
 
-        RunRecordEntity record = runRecordService.getRecord(id);
+        RunRecordResponseDTO record = runRecordService.getRecord(id);
 
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -56,9 +58,9 @@ public class RunRecordController {
      *  GET /record/my
      * ========================= */
     @GetMapping("/my")
-    public ResponseEntity<ApiResponseDTO<List<RunRecordEntity>>> getMyRecords() {
+    public ResponseEntity<ApiResponseDTO<List<RunRecordResponseDTO>>> getMyRecords() {
 
-        List<RunRecordEntity> records = runRecordService.getMyRecords();
+        List<RunRecordResponseDTO> records = runRecordService.getMyRecords();
 
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -70,26 +72,16 @@ public class RunRecordController {
      *  PUT /record/{id}
      * ========================= */
     @PutMapping("/{id}")
-    public ResponseEntity<ApiResponseDTO<RunRecordEntity>> updateRecord(
+    public ResponseEntity<ApiResponseDTO<RunRecordResponseDTO>> updateRecord(
             @PathVariable Long id,
-            @RequestBody RunRecordRequestDTO request
+            @RequestBody RunRecordUpdateDTO request
     ) throws Exception {
 
-        RunRecordEntity updated = runRecordService.updateRecord(id, request);
+        RunRecordResponseDTO updated = runRecordService.updateRecord(id, request);
 
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(ApiResponseDTO.success(updated));
-    }
-
-    @PatchMapping("/{id}")
-    public ResponseEntity<ApiResponseDTO<RunRecordEntity>> patchRecord(
-            @PathVariable Long id,
-            @RequestBody RunRecordPatchDTO request
-    ) throws Exception {
-        RunRecordEntity updated = runRecordService.patchRecord(id, request);
-
-        return ResponseEntity.ok(ApiResponseDTO.success(updated));
     }
 
     /** =========================
