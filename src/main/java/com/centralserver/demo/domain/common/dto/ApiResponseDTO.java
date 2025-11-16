@@ -13,6 +13,7 @@ public class ApiResponseDTO<T> {
     private T data;
     private String error;
 
+    // 성공 응답
     public static <T> ApiResponseDTO<T> success(T data) {
         return ApiResponseDTO.<T>builder()
                 .success(true)
@@ -21,6 +22,7 @@ public class ApiResponseDTO<T> {
                 .build();
     }
 
+    // 실패 응답
     public static <T> ApiResponseDTO<T> error(String errorMessage) {
         return ApiResponseDTO.<T>builder()
                 .success(false)
