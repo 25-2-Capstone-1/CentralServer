@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class RecommendRouteDTO {
 
-    private String routeId;          // 경로 식별자
+    private Long routeId;          // 경로 식별자
     private String routeName;        // 경로 이름
     private Point startPoint;        // 시작 지점
     private Point endPoint;          // 도착 지점

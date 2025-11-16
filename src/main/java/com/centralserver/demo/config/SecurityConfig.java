@@ -124,10 +124,15 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/jwt/exchange", "/jwt/refresh").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user/exist", "/user").permitAll()
+
                         .requestMatchers(HttpMethod.GET, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.PUT, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.DELETE, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.POST, "/route/recommend").hasRole(UserRoleType.USER.name())
+
+                        .requestMatchers("/record", "/record/**")
+                                    .hasRole(UserRoleType.USER.name())
+
                         .requestMatchers(HttpMethod.GET, "/user/**").hasRole(UserRoleType.USER.name())
                         .anyRequest().authenticated()
                 );
