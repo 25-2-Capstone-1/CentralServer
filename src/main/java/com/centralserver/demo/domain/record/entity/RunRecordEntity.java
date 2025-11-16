@@ -1,5 +1,6 @@
 package com.centralserver.demo.domain.record.entity;
 
+import com.centralserver.demo.domain.route.entity.RecommendedRoute;
 import com.centralserver.demo.domain.user.entity.UserEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,6 +29,11 @@ public class RunRecordEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
+
+    /** 추천된 경로 정보 **/
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "recommended_route_id")
+    private RecommendedRoute recommendedRoute;
 
     /** 기본 정보 **/
     @Column(nullable = false, length = 100)
@@ -64,13 +70,6 @@ public class RunRecordEntity {
     /** 경로 정보 (JSON) **/
     @Column(name = "waypoints_json", columnDefinition = "JSON")
     private String waypointsJson;
-
-    /** 난이도 / 설명 **/
-    @Column(name = "difficulty", length = 20)
-    private String difficulty;
-
-    @Column(columnDefinition = "TEXT")
-    private String description;
 
     /** bookmark 여부(찜/즐겨찾기) **/
     @Builder.Default
