@@ -18,6 +18,5 @@ public class RunRecordPatchDTO {
     private Integer cadence;
     private String fullAddress;
     private String waypointsJson;
-    private String difficulty;
-    private String description;
+
 }
