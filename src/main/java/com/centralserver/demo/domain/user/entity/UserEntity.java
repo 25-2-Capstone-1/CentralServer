@@ -42,10 +42,12 @@ public class UserEntity {
     private String phoneNumber;
 
     @Column(name = "is_lock", nullable = false)
+    @Builder.Default
     private Boolean isLock = false;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "role_type", nullable = false)
+    @Builder.Default
     private UserRoleType roleType =  UserRoleType.USER;
 
     @CreatedDate
