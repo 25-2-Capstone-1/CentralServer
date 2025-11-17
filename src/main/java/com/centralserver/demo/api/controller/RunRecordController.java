@@ -6,12 +6,10 @@ import com.centralserver.demo.domain.record.dto.*;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
-import com.centralserver.demo.domain.record.entity.RunRecordEntity;
 import com.centralserver.demo.domain.record.service.RunRecordService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

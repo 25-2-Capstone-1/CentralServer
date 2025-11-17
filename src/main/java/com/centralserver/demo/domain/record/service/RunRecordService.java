@@ -221,7 +221,7 @@ public class RunRecordService {
     }
 
 
-    /** -------- UPDATE 영역 -------- */
+    /* -------- UPDATE 영역 -------- */
 
     /** 4) 기록 수정(Update) */
     public RunRecordResponseDTO updateRecord(Long recordId, RunRecordUpdateDTO dto) throws AccessDeniedException {
@@ -296,7 +296,7 @@ public class RunRecordService {
 //        return runRecordRepository.save(record);
 //    }
 
-    /** -------- DELETE 영역 -------- */
+    /* -------- DELETE 영역 -------- */
 
     /** 5) 기록 삭제(Delete) */
     public void deleteRecord(Long recordId) throws AccessDeniedException {
