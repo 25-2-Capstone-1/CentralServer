@@ -3,6 +3,9 @@ package com.centralserver.demo.api.controller;
 import com.centralserver.demo.domain.common.dto.ApiResponseDTO;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
 import com.centralserver.demo.domain.record.dto.*;
+import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
+import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
+import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
 import com.centralserver.demo.domain.record.entity.RunRecordEntity;
 import com.centralserver.demo.domain.record.service.RunRecordService;
 import lombok.RequiredArgsConstructor;
@@ -55,9 +58,9 @@ public class RunRecordController {
      *  GET /record/my
      * ========================= */
     @GetMapping("/my")
-    public ResponseEntity<ApiResponseDTO<List<RunRecordSimpleResponseDTO>>> getMyRecords() {
+    public ResponseEntity<ApiResponseDTO<List<RunRecordResponseDTO>>> getMyRecords() {
 
-        List<RunRecordSimpleResponseDTO> records = runRecordService.getMyRecords();
+        List<RunRecordResponseDTO> records = runRecordService.getMyRecords();
 
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -93,5 +96,19 @@ public class RunRecordController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(ApiResponseDTO.success(new MessageResponseDTO("Record deleted successfully.")));
+    }
+
+    /** =========================
+     *   6) 북마크된 기록만 조회
+     *  GET /records/my/bookmarks
+     * ========================= */
+    @GetMapping("/my/bookmarks")
+    public ResponseEntity<ApiResponseDTO<List<RunRecordResponseDTO>>> getMyBookmarkedRecords() {
+
+        List<RunRecordResponseDTO> records = runRecordService.getMyBookmarkedRecords();
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(ApiResponseDTO.success(records));
     }
 }
