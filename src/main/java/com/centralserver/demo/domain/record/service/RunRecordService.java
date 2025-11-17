@@ -64,8 +64,8 @@ public class RunRecordService {
                 .durationSeconds(dto.getDurationSeconds())
                 .distanceKm(dto.getDistanceKm())
                 .avgPace(dto.getAvgPace())
-                .calories(dto.getCalories())
-                .cadence(dto.getCadence())
+                .calories(calculateCalories(dto))
+                .cadence(calculateCadence(dto))
                 .fullAddress(dto.getFullAddress())
                 .waypointsJson(dto.getWaypointsJson())
                 .bookmark(false)
@@ -93,6 +93,48 @@ public class RunRecordService {
                 )
                 .build();
     }
+
+    /** 🔥 칼로리 계산 로직 */
+    private int calculateCalories(RunRecordRequestDTO dto) {
+
+        int weight = 70;
+
+        double distance = dto.getDistanceKm();   // 이미 double이므로 그대로 사용
+
+        double calories = distance * weight * 1.03;
+
+        return (int) calories;
+    }
+
+    /** 🔥 케이던스(cadence) 계산 로직 */
+    private int calculateCadence(RunRecordRequestDTO dto) {
+
+        // "05:12" → 312.0초
+        double paceSeconds = parsePaceToSeconds(dto.getAvgPace());
+
+        if (paceSeconds <= 0) return 0;
+
+        // 예시 공식: 케이던스 ≈ 180 - (paceSeconds / 30)
+        double rawCadence = 180 - (paceSeconds / 30);
+
+        return (int) rawCadence;
+    }
+
+    /** 🔧 "MM:SS" -> seconds 변환 함수 */
+    private double parsePaceToSeconds(String paceStr) {
+        try {
+            if (paceStr.contains(":")) {
+                String[] parts = paceStr.split(":");
+                int minutes = Integer.parseInt(parts[0]);
+                int seconds = Integer.parseInt(parts[1]);
+                return minutes * 60 + seconds;
+            }
+            return Double.parseDouble(paceStr); // 혹시 "300"처럼 올 수도 있음
+        } catch (Exception e) {
+            return 0; // 잘못된 값일 경우 0 처리
+        }
+    }
+
 
     /** 2) 단일 기록 조회(Read One) */
     public RunRecordResponseDTO getRecord(Long recordId) throws AccessDeniedException {
@@ -152,14 +194,14 @@ public class RunRecordService {
     }
 
     /** 6) 북마크된 기록만 조회(Read Bookmarked Only) */
-    public List<RunRecordResponseDTO> getMyBookmarkedRecords() {
+    public List<RunRecordSimpleResponseDTO> getMyBookmarkedRecords() {
         UserEntity user = getSessionUser();
 
         List<RunRecordEntity> records = runRecordRepository
                 .findAllByUser_IdAndBookmarkTrue(user.getId());
 
         return records.stream()
-                .map(record -> RunRecordResponseDTO.builder()
+                .map(record -> RunRecordSimpleResponseDTO.builder()
                         .id(record.getId())
                         .title(record.getTitle())
                         .bookmark(record.isBookmark())
@@ -172,9 +214,6 @@ public class RunRecordService {
                         .durationSeconds(record.getDurationSeconds())
                         .distanceKm(record.getDistanceKm())
                         .avgPace(record.getAvgPace())
-                        .calories(record.getCalories())
-                        .cadence(record.getCadence())
-                        .fullAddress(record.getFullAddress())
                         .waypointsJson(record.getWaypointsJson())
                         .build()
                 )
