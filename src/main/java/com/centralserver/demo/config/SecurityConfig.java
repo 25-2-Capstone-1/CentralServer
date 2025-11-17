@@ -133,6 +133,9 @@ public class SecurityConfig {
                         .requestMatchers("/record", "/record/**")
                                     .hasRole(UserRoleType.USER.name())
 
+                        .requestMatchers("/settings", "/settings/**")
+                                    .hasRole(UserRoleType.USER.name())
+
                         .requestMatchers(HttpMethod.GET, "/user/**").hasRole(UserRoleType.USER.name())
                         .anyRequest().authenticated()
                 );
