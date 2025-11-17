@@ -18,7 +18,8 @@ public interface RunRecordRepository extends JpaRepository<RunRecordEntity, Long
     List<RunRecordEntity> findAllByUser_Id(Long userId);
 
     // 북마크한 기록만 조회
-    List<RunRecordEntity> findByUser_IdAndBookmarkTrue(Long userId);
+    List<RunRecordEntity> findAllByUser_IdAndBookmarkTrue(Long userId);
+
 
     // 특정 날짜 범위 조회
     List<RunRecordEntity> findByUser_IdAndStartTimeBetween(
