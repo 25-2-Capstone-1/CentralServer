@@ -1,10 +1,7 @@
 
 package com.centralserver.demo.domain.record.service;
 
-import com.centralserver.demo.domain.record.dto.RunRecordPatchDTO;
-import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
-import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
-import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
+import com.centralserver.demo.domain.record.dto.*;
 import com.centralserver.demo.domain.record.entity.RunRecordEntity;
 import com.centralserver.demo.domain.record.repository.RunRecordRepository;
 import com.centralserver.demo.domain.route.entity.RecommendedRoute;
@@ -126,13 +123,13 @@ public class RunRecordService {
     }
 
     /** 3) 본인 기록 전체 조회(Read All) */
-    public List<RunRecordResponseDTO> getMyRecords() {
+    public List<RunRecordSimpleResponseDTO> getMyRecords() {
         UserEntity user = getSessionUser();
 
         List<RunRecordEntity> records = runRecordRepository.findAllByUser_Id(user.getId());
 
         return records.stream()
-                .map(record -> RunRecordResponseDTO.builder()
+                .map(record -> RunRecordSimpleResponseDTO.builder()
                         .id(record.getId())
                         .title(record.getTitle())
                         .bookmark(record.isBookmark())
@@ -145,9 +142,6 @@ public class RunRecordService {
                         .durationSeconds(record.getDurationSeconds())
                         .distanceKm(record.getDistanceKm())
                         .avgPace(record.getAvgPace())
-                        .calories(record.getCalories())
-                        .cadence(record.getCadence())
-                        .fullAddress(record.getFullAddress())
                         .waypointsJson(record.getWaypointsJson())
                         .build()
                 )
