@@ -13,8 +13,6 @@ public class RunRecordPatchDTO {
     private Double distanceKm;
     private String avgPace;
     private Integer calories;
-    private Double elevationGain;
-    private Integer avgHeartRate;
     private Integer cadence;
     private String fullAddress;
     private String waypointsJson;
