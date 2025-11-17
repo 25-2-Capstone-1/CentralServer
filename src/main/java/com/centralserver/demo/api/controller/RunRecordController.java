@@ -2,7 +2,6 @@ package com.centralserver.demo.api.controller;
 
 import com.centralserver.demo.domain.common.dto.ApiResponseDTO;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
-import com.centralserver.demo.domain.record.dto.RunRecordPatchDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
@@ -96,5 +95,19 @@ public class RunRecordController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(ApiResponseDTO.success(new MessageResponseDTO("Record deleted successfully.")));
+    }
+
+    /** =========================
+     *   6) 북마크된 기록만 조회
+     *  GET /records/my/bookmarks
+     * ========================= */
+    @GetMapping("/my/bookmarks")
+    public ResponseEntity<ApiResponseDTO<List<RunRecordResponseDTO>>> getMyBookmarkedRecords() {
+
+        List<RunRecordResponseDTO> records = runRecordService.getMyBookmarkedRecords();
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(ApiResponseDTO.success(records));
     }
 }
