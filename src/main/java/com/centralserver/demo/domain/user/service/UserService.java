@@ -2,6 +2,7 @@ package com.centralserver.demo.domain.user.service;
 
 import com.centralserver.demo.domain.jwt.service.JwtService;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
+import com.centralserver.demo.domain.settings.service.SettingsService;
 import com.centralserver.demo.domain.user.dto.*;
 import com.centralserver.demo.domain.user.dto.UserEmailDTO;
 import com.centralserver.demo.domain.user.entity.UserEntity;
@@ -21,17 +22,20 @@ import java.nio.file.AccessDeniedException;
 
 @Service
 public class UserService implements UserDetailsService {
+
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
+    private final SettingsService settingsService;
 
-    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtService jwtService) {
+    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtService jwtService, SettingsService settingsService) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.jwtService = jwtService;
+        this.settingsService = settingsService;
     }
 
-    // 자체 로그인 회원 가입 (존재 여부)
+    // 자체 로그인 회원 가입 (존재 여부 확인)
     @Transactional(readOnly = true)
     public Boolean existUser(UserRequestDTO dto) {
         return userRepository.existsByUserEmail(dto.getUserEmail());
@@ -55,7 +59,12 @@ public class UserService implements UserDetailsService {
                 .roleType(UserRoleType.USER)
                 .build();
 
-        return userRepository.save(entity).getId();
+        userRepository.save(entity);
+
+        // 유저의 default 설정 정보 생성
+        settingsService.createDefaultSettings(entity);
+
+        return entity.getId();
     }
 
     // 자체 로그인
