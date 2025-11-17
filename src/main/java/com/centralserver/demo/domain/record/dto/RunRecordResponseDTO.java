@@ -26,10 +26,6 @@ public class RunRecordResponseDTO {
 
     private Integer calories;
 
-    private Double elevationGain;
-
-    private Integer avgHeartRate;
-
     private Integer cadence;
 
     private String fullAddress;

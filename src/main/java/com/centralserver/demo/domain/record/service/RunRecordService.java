@@ -65,8 +65,6 @@ public class RunRecordService {
                 .distanceKm(dto.getDistanceKm())
                 .avgPace(dto.getAvgPace())
                 .calories(dto.getCalories())
-                .elevationGain(dto.getElevationGain())
-                .avgHeartRate(dto.getAvgHeartRate())
                 .cadence(dto.getCadence())
                 .fullAddress(dto.getFullAddress())
                 .waypointsJson(dto.getWaypointsJson())
@@ -85,8 +83,6 @@ public class RunRecordService {
                 .distanceKm(saved.getDistanceKm())
                 .avgPace(saved.getAvgPace())
                 .calories(saved.getCalories())
-                .elevationGain(saved.getElevationGain())
-                .avgHeartRate(saved.getAvgHeartRate())
                 .cadence(saved.getCadence())
                 .fullAddress(saved.getFullAddress())
                 .waypointsJson(saved.getWaypointsJson())
@@ -123,8 +119,6 @@ public class RunRecordService {
                 .distanceKm(record.getDistanceKm())
                 .avgPace(record.getAvgPace())
                 .calories(record.getCalories())
-                .elevationGain(record.getElevationGain())
-                .avgHeartRate(record.getAvgHeartRate())
                 .cadence(record.getCadence())
                 .fullAddress(record.getFullAddress())
                 .waypointsJson(record.getWaypointsJson())
@@ -152,8 +146,6 @@ public class RunRecordService {
                         .distanceKm(record.getDistanceKm())
                         .avgPace(record.getAvgPace())
                         .calories(record.getCalories())
-                        .elevationGain(record.getElevationGain())
-                        .avgHeartRate(record.getAvgHeartRate())
                         .cadence(record.getCadence())
                         .fullAddress(record.getFullAddress())
                         .waypointsJson(record.getWaypointsJson())
@@ -201,8 +193,6 @@ public class RunRecordService {
                 .distanceKm(saved.getDistanceKm())
                 .avgPace(saved.getAvgPace())
                 .calories(saved.getCalories())
-                .elevationGain(saved.getElevationGain())
-                .avgHeartRate(saved.getAvgHeartRate())
                 .cadence(saved.getCadence())
                 .fullAddress(saved.getFullAddress())
                 .waypointsJson(saved.getWaypointsJson())
@@ -232,8 +222,6 @@ public class RunRecordService {
 //        if (dto.getDistanceKm() != null) record.setDistanceKm(dto.getDistanceKm());
 //        if (dto.getAvgPace() != null) record.setAvgPace(dto.getAvgPace());
 //        if (dto.getCalories() != null) record.setCalories(dto.getCalories());
-//        if (dto.getElevationGain() != null) record.setElevationGain(dto.getElevationGain());
-//        if (dto.getAvgHeartRate() != null) record.setAvgHeartRate(dto.getAvgHeartRate());
 //        if (dto.getCadence() != null) record.setCadence(dto.getCadence());
 //        if (dto.getFullAddress() != null) record.setFullAddress(dto.getFullAddress());
 //        if (dto.getWaypointsJson() != null) record.setWaypointsJson(dto.getWaypointsJson());
