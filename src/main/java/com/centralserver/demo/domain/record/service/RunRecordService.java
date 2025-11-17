@@ -1,6 +1,7 @@
 
 package com.centralserver.demo.domain.record.service;
 
+import com.centralserver.demo.domain.record.dto.*;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
@@ -63,10 +64,8 @@ public class RunRecordService {
                 .durationSeconds(dto.getDurationSeconds())
                 .distanceKm(dto.getDistanceKm())
                 .avgPace(dto.getAvgPace())
-                .calories(dto.getCalories())
-                .elevationGain(dto.getElevationGain())
-                .avgHeartRate(dto.getAvgHeartRate())
-                .cadence(dto.getCadence())
+                .calories(calculateCalories(dto))
+                .cadence(calculateCadence(dto))
                 .fullAddress(dto.getFullAddress())
                 .waypointsJson(dto.getWaypointsJson())
                 .bookmark(false)
@@ -84,8 +83,6 @@ public class RunRecordService {
                 .distanceKm(saved.getDistanceKm())
                 .avgPace(saved.getAvgPace())
                 .calories(saved.getCalories())
-                .elevationGain(saved.getElevationGain())
-                .avgHeartRate(saved.getAvgHeartRate())
                 .cadence(saved.getCadence())
                 .fullAddress(saved.getFullAddress())
                 .waypointsJson(saved.getWaypointsJson())
@@ -96,6 +93,48 @@ public class RunRecordService {
                 )
                 .build();
     }
+
+    /** 🔥 칼로리 계산 로직 */
+    private int calculateCalories(RunRecordRequestDTO dto) {
+
+        int weight = 70;
+
+        double distance = dto.getDistanceKm();   // 이미 double이므로 그대로 사용
+
+        double calories = distance * weight * 1.03;
+
+        return (int) calories;
+    }
+
+    /** 🔥 케이던스(cadence) 계산 로직 */
+    private int calculateCadence(RunRecordRequestDTO dto) {
+
+        // "05:12" → 312.0초
+        double paceSeconds = parsePaceToSeconds(dto.getAvgPace());
+
+        if (paceSeconds <= 0) return 0;
+
+        // 예시 공식: 케이던스 ≈ 180 - (paceSeconds / 30)
+        double rawCadence = 180 - (paceSeconds / 30);
+
+        return (int) rawCadence;
+    }
+
+    /** 🔧 "MM:SS" -> seconds 변환 함수 */
+    private double parsePaceToSeconds(String paceStr) {
+        try {
+            if (paceStr.contains(":")) {
+                String[] parts = paceStr.split(":");
+                int minutes = Integer.parseInt(parts[0]);
+                int seconds = Integer.parseInt(parts[1]);
+                return minutes * 60 + seconds;
+            }
+            return Double.parseDouble(paceStr); // 혹시 "300"처럼 올 수도 있음
+        } catch (Exception e) {
+            return 0; // 잘못된 값일 경우 0 처리
+        }
+    }
+
 
     /** 2) 단일 기록 조회(Read One) */
     public RunRecordResponseDTO getRecord(Long recordId) throws AccessDeniedException {
@@ -122,8 +161,6 @@ public class RunRecordService {
                 .distanceKm(record.getDistanceKm())
                 .avgPace(record.getAvgPace())
                 .calories(record.getCalories())
-                .elevationGain(record.getElevationGain())
-                .avgHeartRate(record.getAvgHeartRate())
                 .cadence(record.getCadence())
                 .fullAddress(record.getFullAddress())
                 .waypointsJson(record.getWaypointsJson())
@@ -131,13 +168,13 @@ public class RunRecordService {
     }
 
     /** 3) 본인 기록 전체 조회(Read All) */
-    public List<RunRecordResponseDTO> getMyRecords() {
+    public List<RunRecordSimpleResponseDTO> getMyRecords() {
         UserEntity user = getSessionUser();
 
         List<RunRecordEntity> records = runRecordRepository.findAllByUser_Id(user.getId());
 
         return records.stream()
-                .map(record -> RunRecordResponseDTO.builder()
+                .map(record -> RunRecordSimpleResponseDTO.builder()
                         .id(record.getId())
                         .title(record.getTitle())
                         .bookmark(record.isBookmark())
@@ -150,11 +187,6 @@ public class RunRecordService {
                         .durationSeconds(record.getDurationSeconds())
                         .distanceKm(record.getDistanceKm())
                         .avgPace(record.getAvgPace())
-                        .calories(record.getCalories())
-                        .elevationGain(record.getElevationGain())
-                        .avgHeartRate(record.getAvgHeartRate())
-                        .cadence(record.getCadence())
-                        .fullAddress(record.getFullAddress())
                         .waypointsJson(record.getWaypointsJson())
                         .build()
                 )
@@ -162,14 +194,14 @@ public class RunRecordService {
     }
 
     /** 6) 북마크된 기록만 조회(Read Bookmarked Only) */
-    public List<RunRecordResponseDTO> getMyBookmarkedRecords() {
+    public List<RunRecordSimpleResponseDTO> getMyBookmarkedRecords() {
         UserEntity user = getSessionUser();
 
         List<RunRecordEntity> records = runRecordRepository
                 .findAllByUser_IdAndBookmarkTrue(user.getId());
 
         return records.stream()
-                .map(record -> RunRecordResponseDTO.builder()
+                .map(record -> RunRecordSimpleResponseDTO.builder()
                         .id(record.getId())
                         .title(record.getTitle())
                         .bookmark(record.isBookmark())
@@ -182,11 +214,6 @@ public class RunRecordService {
                         .durationSeconds(record.getDurationSeconds())
                         .distanceKm(record.getDistanceKm())
                         .avgPace(record.getAvgPace())
-                        .calories(record.getCalories())
-                        .elevationGain(record.getElevationGain())
-                        .avgHeartRate(record.getAvgHeartRate())
-                        .cadence(record.getCadence())
-                        .fullAddress(record.getFullAddress())
                         .waypointsJson(record.getWaypointsJson())
                         .build()
                 )
@@ -194,7 +221,7 @@ public class RunRecordService {
     }
 
 
-    /** -------- UPDATE 영역 -------- */
+    /* -------- UPDATE 영역 -------- */
 
     /** 4) 기록 수정(Update) */
     public RunRecordResponseDTO updateRecord(Long recordId, RunRecordUpdateDTO dto) throws AccessDeniedException {
@@ -233,8 +260,6 @@ public class RunRecordService {
                 .distanceKm(saved.getDistanceKm())
                 .avgPace(saved.getAvgPace())
                 .calories(saved.getCalories())
-                .elevationGain(saved.getElevationGain())
-                .avgHeartRate(saved.getAvgHeartRate())
                 .cadence(saved.getCadence())
                 .fullAddress(saved.getFullAddress())
                 .waypointsJson(saved.getWaypointsJson())
@@ -264,8 +289,6 @@ public class RunRecordService {
 //        if (dto.getDistanceKm() != null) record.setDistanceKm(dto.getDistanceKm());
 //        if (dto.getAvgPace() != null) record.setAvgPace(dto.getAvgPace());
 //        if (dto.getCalories() != null) record.setCalories(dto.getCalories());
-//        if (dto.getElevationGain() != null) record.setElevationGain(dto.getElevationGain());
-//        if (dto.getAvgHeartRate() != null) record.setAvgHeartRate(dto.getAvgHeartRate());
 //        if (dto.getCadence() != null) record.setCadence(dto.getCadence());
 //        if (dto.getFullAddress() != null) record.setFullAddress(dto.getFullAddress());
 //        if (dto.getWaypointsJson() != null) record.setWaypointsJson(dto.getWaypointsJson());
@@ -273,7 +296,7 @@ public class RunRecordService {
 //        return runRecordRepository.save(record);
 //    }
 
-    /** -------- DELETE 영역 -------- */
+    /* -------- DELETE 영역 -------- */
 
     /** 5) 기록 삭제(Delete) */
     public void deleteRecord(Long recordId) throws AccessDeniedException {

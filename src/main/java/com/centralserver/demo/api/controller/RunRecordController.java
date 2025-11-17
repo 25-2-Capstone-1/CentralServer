@@ -2,15 +2,14 @@ package com.centralserver.demo.api.controller;
 
 import com.centralserver.demo.domain.common.dto.ApiResponseDTO;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
+import com.centralserver.demo.domain.record.dto.*;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
-import com.centralserver.demo.domain.record.entity.RunRecordEntity;
 import com.centralserver.demo.domain.record.service.RunRecordService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -57,9 +56,9 @@ public class RunRecordController {
      *  GET /record/my
      * ========================= */
     @GetMapping("/my")
-    public ResponseEntity<ApiResponseDTO<List<RunRecordResponseDTO>>> getMyRecords() {
+    public ResponseEntity<ApiResponseDTO<List<RunRecordSimpleResponseDTO>>> getMyRecords() {
 
-        List<RunRecordResponseDTO> records = runRecordService.getMyRecords();
+        List<RunRecordSimpleResponseDTO> records = runRecordService.getMyRecords();
 
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -102,9 +101,9 @@ public class RunRecordController {
      *  GET /records/my/bookmarks
      * ========================= */
     @GetMapping("/my/bookmarks")
-    public ResponseEntity<ApiResponseDTO<List<RunRecordResponseDTO>>> getMyBookmarkedRecords() {
+    public ResponseEntity<ApiResponseDTO<List<RunRecordSimpleResponseDTO>>> getMyBookmarkedRecords() {
 
-        List<RunRecordResponseDTO> records = runRecordService.getMyBookmarkedRecords();
+        List<RunRecordSimpleResponseDTO> records = runRecordService.getMyBookmarkedRecords();
 
         return ResponseEntity
                 .status(HttpStatus.OK)
