@@ -54,12 +54,6 @@ public class RunRecordEntity {
     @Column
     private Integer calories;             // 칼로리 소모량
 
-    @Column(name = "elevation_gain")
-    private Double elevationGain;         // 총 상승 고도 (m)
-
-    @Column(name = "avg_heart_rate")
-    private Integer avgHeartRate;         // 평균 심박수
-
     @Column
     private Integer cadence;              // 케이던스
 

@@ -1,6 +1,7 @@
 package com.centralserver.demo.domain.record.dto;
 
 import lombok.*;
+
 import java.time.LocalDateTime;
 
 @Getter
@@ -8,7 +9,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RunRecordResponseDTO {
+public class RunRecordSimpleResponseDTO {
 
     private Long id;
 
@@ -24,13 +25,8 @@ public class RunRecordResponseDTO {
 
     private String avgPace;
 
-    private Integer calories;
-
-    private Integer cadence;
-
-    private String fullAddress;
-
     private String waypointsJson;
 
     private Long recommendedRouteId;  // null 가능
+
 }
