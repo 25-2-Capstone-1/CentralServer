@@ -1,7 +1,6 @@
 
 package com.centralserver.demo.domain.record.service;
 
-import com.centralserver.demo.domain.record.dto.RunRecordPatchDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordUpdateDTO;
@@ -161,6 +160,39 @@ public class RunRecordService {
                 )
                 .toList();
     }
+
+    /** 6) 북마크된 기록만 조회(Read Bookmarked Only) */
+    public List<RunRecordResponseDTO> getMyBookmarkedRecords() {
+        UserEntity user = getSessionUser();
+
+        List<RunRecordEntity> records = runRecordRepository
+                .findAllByUser_IdAndBookmarkTrue(user.getId());
+
+        return records.stream()
+                .map(record -> RunRecordResponseDTO.builder()
+                        .id(record.getId())
+                        .title(record.getTitle())
+                        .bookmark(record.isBookmark())
+                        .recommendedRouteId(
+                                record.getRecommendedRoute() != null
+                                        ? record.getRecommendedRoute().getRouteId()
+                                        : null
+                        )
+                        .startTime(record.getStartTime())
+                        .durationSeconds(record.getDurationSeconds())
+                        .distanceKm(record.getDistanceKm())
+                        .avgPace(record.getAvgPace())
+                        .calories(record.getCalories())
+                        .elevationGain(record.getElevationGain())
+                        .avgHeartRate(record.getAvgHeartRate())
+                        .cadence(record.getCadence())
+                        .fullAddress(record.getFullAddress())
+                        .waypointsJson(record.getWaypointsJson())
+                        .build()
+                )
+                .toList();
+    }
+
 
     /** -------- UPDATE 영역 -------- */
 
