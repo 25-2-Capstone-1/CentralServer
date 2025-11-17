@@ -31,10 +31,6 @@ public class RunRecordRequestDTO {
 
     private String avgPace;              // 평균 페이스 ("6'18''")
 
-    private Integer calories;            // 칼로리 소모량
-
-    private Integer cadence;             // 케이던스
-
     /** 주소 정보 **/
     private String fullAddress;
 
