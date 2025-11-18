@@ -13,4 +13,6 @@ public interface VoiceSettingsRepository extends JpaRepository<VoiceSettings, Lo
 
     // userId 기반 조회 (Controller에서 자주 쓰임)
     Optional<VoiceSettings> findByUserId(Long userId);
+
+    void deleteByUser(UserEntity user);
 }

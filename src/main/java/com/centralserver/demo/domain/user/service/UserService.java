@@ -4,7 +4,6 @@ import com.centralserver.demo.domain.jwt.service.JwtService;
 import com.centralserver.demo.domain.common.dto.MessageResponseDTO;
 import com.centralserver.demo.domain.settings.service.SettingsService;
 import com.centralserver.demo.domain.user.dto.*;
-import com.centralserver.demo.domain.user.dto.UserEmailDTO;
 import com.centralserver.demo.domain.user.entity.UserEntity;
 import com.centralserver.demo.domain.user.entity.UserRoleType;
 import com.centralserver.demo.domain.user.repository.UserRepository;
@@ -122,11 +121,20 @@ public class UserService implements UserDetailsService {
             throw new AccessDeniedException("본인 혹은 관리자만 삭제할 수 있습니다.");
         }
 
+        // 유저 엔티티 조회
+        UserEntity entity = userRepository.findByUserEmailAndIsLock(dto.getUserEmail(), false)
+                .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + dto.getUserEmail()));
+
+        // 1) 사용자 설정 삭제
+
         // 유저 제거
         userRepository.deleteByUserEmail(dto.getUserEmail());
 
         // Refresh 토큰 제거
         jwtService.removeRefreshUser(dto.getUserEmail());
+
+        // 사용자 설정 삭제
+        settingsService.deleteSettingsByUser(entity);
 
         return MessageResponseDTO.builder()
                 .message("Account successfully deleted.")
@@ -144,33 +152,6 @@ public class UserService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
 
         return new UserResponseDTO(entity.getId(), userEmail, entity.getUsername(), entity.getNickname(), entity.getGender(), entity.getPhoneNumber());
-    }
-
-    //유저 개별 정보 조회
-    @Transactional(readOnly = true)
-    public UserEmailDTO readUserEmail() {
-        String userEmail = SecurityContextHolder.getContext().getAuthentication().getName();
-        return new UserEmailDTO(userEmail);
-    }
-
-    @Transactional(readOnly = true)
-    public UsernameDTO readUsername() {
-        String userEmail = SecurityContextHolder.getContext().getAuthentication().getName();
-
-        UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
-                .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
-
-        return new UsernameDTO(entity.getUsername());
-    }
-
-    @Transactional(readOnly = true)
-    public UserIdDTO readUserId() {
-        String userEmail = SecurityContextHolder.getContext().getAuthentication().getName();
-
-        UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
-                .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
-
-        return new UserIdDTO(entity.getId());
     }
 
     @Transactional

@@ -135,4 +135,14 @@ public class SettingsService {
         timerSettingsRepository.save(settings);
         return getTimerSettings();
     }
+
+    @Transactional
+    public void deleteSettingsByUser(UserEntity user) {
+
+        // 1) Voice Settings 삭제
+        voiceSettingsRepository.deleteByUser(user);
+
+        // 2) Timer Settings 삭제
+        timerSettingsRepository.deleteByUser(user);
+    }
 }
