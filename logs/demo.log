@@ -238,3 +238,191 @@
 2025-11-18T12:56:31.984+09:00  INFO 16160 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-18T12:56:31.986+09:00  INFO 16160 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-11-18T12:56:31.998+09:00  INFO 16160 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-18T13:45:35.523+09:00  INFO 14724 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 14724 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
+2025-11-18T13:45:35.528+09:00  INFO 14724 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-18T13:45:35.631+09:00  INFO 14724 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-18T13:45:35.634+09:00  INFO 14724 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-18T13:45:38.221+09:00  INFO 14724 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18T13:45:40.113+09:00  INFO 14724 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1840 ms. Found 6 JPA repository interfaces.
+2025-11-18T13:45:45.159+09:00  INFO 14724 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-18T13:45:45.299+09:00  INFO 14724 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-18T13:45:45.299+09:00  INFO 14724 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-18T13:45:45.984+09:00  INFO 14724 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-18T13:45:45.984+09:00  INFO 14724 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10309 ms
+2025-11-18T13:45:46.879+09:00  INFO 14724 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18T13:45:47.256+09:00  INFO 14724 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-18T13:45:47.518+09:00  INFO 14724 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-18T13:45:48.993+09:00  INFO 14724 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18T13:45:49.146+09:00  INFO 14724 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-18T13:45:52.866+09:00  INFO 14724 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33bad352
+2025-11-18T13:45:52.876+09:00  INFO 14724 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-18T13:45:54.546+09:00  INFO 14724 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18T13:45:59.236+09:00  INFO 14724 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18T13:46:03.150+09:00  INFO 14724 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18T13:46:06.720+09:00  INFO 14724 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-11-18T13:46:06.837+09:00  WARN 14724 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18T13:46:07.521+09:00 DEBUG 14724 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2025-11-18T13:46:07.981+09:00 DEBUG 14724 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18T13:46:08.293+09:00 DEBUG 14724 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18T13:46:08.880+09:00  INFO 14724 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-11-18T13:46:09.029+09:00  INFO 14724 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-18T13:46:09.140+09:00  INFO 14724 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-18T13:46:09.161+09:00  INFO 14724 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 34.539 seconds (process running for 36.413)
+2025-11-18T13:47:45.951+09:00  INFO 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-18T13:47:45.976+09:00  INFO 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-18T13:47:45.983+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-11-18T13:47:45.994+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-11-18T13:47:45.996+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-11-18T13:47:46.067+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3075dcea
+2025-11-18T13:47:46.070+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e87ee25
+2025-11-18T13:47:46.074+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-18T13:47:46.075+09:00  INFO 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 99 ms
+2025-11-18T13:47:46.400+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user", parameters={}
+2025-11-18T13:47:46.413+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UserController#joinApi(UserRequestDTO)
+2025-11-18T13:47:47.054+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.user.dto.UserRequestDTO@5d0fc985]
+2025-11-18T13:47:50.558+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18T13:47:50.574+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponseDTO(success=true, data=UserJoinResponseDTO(userId=18, username=coco@naver.com), error=nul (truncated)...]
+2025-11-18T13:47:50.641+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-18T13:48:20.319+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
+2025-11-18T13:48:20.319+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
+2025-11-18T13:48:20.388+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
+2025-11-18T13:48:21.105+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.r.f.client.ExchangeFunctions       : [63f1e161] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:48:23.755+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [63f1e161] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:48:26.059+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [63f1e161] [5e8b8ad4-1] Response 429 TOO_MANY_REQUESTS
+2025-11-18T13:48:26.147+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [63f1e161] [5e8b8ad4-1] Read 337 bytes
+2025-11-18T13:48:26.627+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
+2025-11-18T13:48:26.629+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18T13:48:26.631+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
+2025-11-18T13:48:26.637+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.reactive.function.client.WebClientResponseException$TooManyRequests: 429 Too Many Requests from POST https://api.openai.com/v1/chat/completions]
+2025-11-18T13:48:26.638+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-11-18T13:49:44.714+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
+2025-11-18T13:49:44.716+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
+2025-11-18T13:49:44.720+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
+2025-11-18T13:49:45.058+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.r.f.client.ExchangeFunctions       : [309c81fb] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:49:45.061+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [309c81fb] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:49:45.936+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [309c81fb] [5e8b8ad4-2] Response 429 TOO_MANY_REQUESTS
+2025-11-18T13:49:45.938+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [309c81fb] [5e8b8ad4-2] Read 337 bytes
+2025-11-18T13:49:46.263+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
+2025-11-18T13:49:46.265+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18T13:49:46.266+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
+2025-11-18T13:49:46.268+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.reactive.function.client.WebClientResponseException$TooManyRequests: 429 Too Many Requests from POST https://api.openai.com/v1/chat/completions]
+2025-11-18T13:49:46.269+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-11-18T13:54:14.257+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
+2025-11-18T13:54:14.263+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
+2025-11-18T13:54:14.283+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
+2025-11-18T13:54:14.630+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [4b1d0f67] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:54:14.641+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4b1d0f67] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:54:17.587+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [4b1d0f67] [5e8b8ad4-3] Response 200 OK
+2025-11-18T13:54:17.632+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4b1d0f67] [5e8b8ad4-3] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:54:17.881+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [2515fd3c] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:54:17.884+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2515fd3c] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:54:19.942+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [2515fd3c] [5e8b8ad4-4] Response 200 OK
+2025-11-18T13:54:19.950+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2515fd3c] [5e8b8ad4-4] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:54:20.126+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [2494bc24] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:54:20.128+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2494bc24] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:54:22.470+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [2494bc24] [5e8b8ad4-5] Response 200 OK
+2025-11-18T13:54:22.475+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2494bc24] [5e8b8ad4-5] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:54:22.976+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18T13:54:22.978+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.centralserver.demo.domain.route.dto.RecommendRouteDTO@10bd76d3, com.centralserver.demo.domain.r (truncated)...]
+2025-11-18T13:54:23.008+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-18T13:55:15.394+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
+2025-11-18T13:55:15.399+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
+2025-11-18T13:55:15.436+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
+2025-11-18T13:55:15.797+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.r.f.client.ExchangeFunctions       : [a23b909] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:55:15.806+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [a23b909] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:55:18.066+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [a23b909] [5e8b8ad4-6] Response 200 OK
+2025-11-18T13:55:18.072+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [a23b909] [5e8b8ad4-6] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:55:18.260+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.r.f.client.ExchangeFunctions       : [df17050] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:55:18.263+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [df17050] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:55:21.080+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [df17050] [5e8b8ad4-7] Response 200 OK
+2025-11-18T13:55:21.085+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [df17050] [5e8b8ad4-7] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:55:21.254+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.r.f.client.ExchangeFunctions       : [55e648d] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:55:21.257+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [55e648d] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:55:23.209+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [55e648d] [5e8b8ad4-8] Response 200 OK
+2025-11-18T13:55:23.216+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [55e648d] [5e8b8ad4-8] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content=```json<EOL>{<EOL>  "d (truncated)...]
+2025-11-18T13:55:24.003+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
+2025-11-18T13:55:24.005+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18T13:55:24.005+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
+2025-11-18T13:55:24.014+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: ❌ GPT JSON 파싱 실패: ```json<EOL>{<EOL>  "difficulty": "medium",<EOL>  "routeName": "여의도 한강 러닝 코스 3.1km",<EOL>  "description": "여유로운 한강을 따라 달리며 멋진 경치를 감상해보세요! 일정한 경사를 가진 이 코스에서 신선한 바람을 느껴보세요."<EOL>}<EOL>```]
+2025-11-18T13:55:24.014+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-11-18T13:57:27.025+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-18T13:57:27.158+09:00  INFO 14724 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-18T13:57:27.446+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18T13:57:27.511+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-18T13:57:27.568+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-18T13:57:43.856+09:00  INFO 13984 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 13984 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
+2025-11-18T13:57:43.859+09:00  INFO 13984 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-18T13:57:43.966+09:00  INFO 13984 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-18T13:57:43.966+09:00  INFO 13984 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-18T13:57:46.069+09:00  INFO 13984 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18T13:57:46.401+09:00  INFO 13984 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 324 ms. Found 6 JPA repository interfaces.
+2025-11-18T13:57:47.722+09:00  INFO 13984 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-18T13:57:47.759+09:00  INFO 13984 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-18T13:57:47.759+09:00  INFO 13984 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-18T13:57:47.866+09:00  INFO 13984 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-18T13:57:47.866+09:00  INFO 13984 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3863 ms
+2025-11-18T13:57:48.257+09:00  INFO 13984 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18T13:57:48.409+09:00  INFO 13984 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-18T13:57:48.480+09:00  INFO 13984 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-18T13:57:49.111+09:00  INFO 13984 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18T13:57:49.167+09:00  INFO 13984 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-18T13:57:51.370+09:00  INFO 13984 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@544ffd13
+2025-11-18T13:57:51.382+09:00  INFO 13984 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-18T13:57:52.025+09:00  INFO 13984 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18T13:57:54.396+09:00  INFO 13984 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18T13:57:57.185+09:00  INFO 13984 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18T13:58:00.303+09:00  INFO 13984 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-11-18T13:58:00.478+09:00  WARN 13984 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18T13:58:00.849+09:00 DEBUG 13984 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2025-11-18T13:58:01.068+09:00 DEBUG 13984 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18T13:58:01.250+09:00 DEBUG 13984 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18T13:58:01.820+09:00  INFO 13984 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-11-18T13:58:01.962+09:00  INFO 13984 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-18T13:58:02.076+09:00  INFO 13984 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-18T13:58:02.101+09:00  INFO 13984 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 19.358 seconds (process running for 21.681)
+2025-11-18T13:58:17.179+09:00  INFO 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-18T13:58:17.181+09:00  INFO 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-18T13:58:17.182+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-11-18T13:58:17.183+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-11-18T13:58:17.183+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-11-18T13:58:17.186+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7786af
+2025-11-18T13:58:17.189+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@35117ad5
+2025-11-18T13:58:17.190+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-18T13:58:17.191+09:00  INFO 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-11-18T13:58:17.815+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
+2025-11-18T13:58:17.823+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
+2025-11-18T13:58:18.100+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
+2025-11-18T13:58:19.519+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.r.f.client.ExchangeFunctions       : [388a13b9] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:58:22.068+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [388a13b9] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:58:25.283+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [388a13b9] [7df58689-1] Response 200 OK
+2025-11-18T13:58:25.449+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [388a13b9] [7df58689-1] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:58:25.831+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.r.f.client.ExchangeFunctions       : [1a51d9cf] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:58:25.833+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [1a51d9cf] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:58:28.378+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [1a51d9cf] [7df58689-2] Response 200 OK
+2025-11-18T13:58:28.378+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [1a51d9cf] [7df58689-2] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:58:28.555+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.r.f.client.ExchangeFunctions       : [6e4fd44e] HTTP POST https://api.openai.com/v1/chat/completions
+2025-11-18T13:58:28.555+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [6e4fd44e] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
+2025-11-18T13:58:30.660+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [6e4fd44e] [7df58689-3] Response 200 OK
+2025-11-18T13:58:30.667+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [6e4fd44e] [7df58689-3] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
+2025-11-18T13:58:31.239+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18T13:58:31.244+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.centralserver.demo.domain.route.dto.RecommendRouteDTO@5f11f2df, com.centralserver.demo.domain.r (truncated)...]
+2025-11-18T13:58:31.280+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-18T13:59:10.961+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-18T13:59:10.969+09:00  INFO 13984 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-18T13:59:10.999+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18T13:59:10.999+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-18T13:59:10.999+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
