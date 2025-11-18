@@ -1,5 +1,7 @@
 package com.centralserver.demo.domain.route.service;
 
+import com.centralserver.demo.domain.openai.service.GPTService;
+import com.centralserver.demo.domain.openai.dto.RouteEnhanceResult;
 import com.centralserver.demo.domain.route.client.RouteRecommendationClient;
 import com.centralserver.demo.domain.route.converter.RouteJsonConverter;
 import com.centralserver.demo.domain.route.dto.Point;
@@ -8,11 +10,8 @@ import com.centralserver.demo.domain.route.dto.RecommendedRawRouteDTO;
 import com.centralserver.demo.domain.route.dto.RouteRequestDTO;
 import com.centralserver.demo.domain.route.entity.RecommendedRoute;
 import com.centralserver.demo.domain.route.repository.RecommendedRouteRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,6 +30,7 @@ public class RouteService {
 
     private final RecommendedRouteRepository routeRepository;
     private final RouteJsonConverter jsonConverter;
+    private final GPTService gptService;
 
     /**
      * - 외부 추천 API 호출
@@ -58,20 +58,22 @@ public class RouteService {
 
             // 2. 중간 서버에서 생성하는 필드
             int estimatedTime = calculateEstimatedTime(raw.getDistance());
-            String difficulty = calculateDifficulty(raw.getDistance(), request.slope());
-            String routeName = generateRouteName(raw.getStartPoint(), raw.getEndPoint(), raw.getDistance());
-            String description = generateDescription(difficulty);
+//            String difficulty = calculateDifficulty(raw.getDistance(), request.slope());
+//            String routeName = generateRouteName(raw.getStartPoint(), raw.getEndPoint(), raw.getDistance());
+//            String description = generateDescription(difficulty);
+
+            RouteEnhanceResult enhanced = gptService.callGptForEnhancement(raw, request);
 
             // 가공된 DTO 생성
             RecommendRouteDTO dto = RecommendRouteDTO.builder()
-                    .routeName(routeName)
+                    .routeName(enhanced.getRouteName())
                     .startPoint(raw.getStartPoint())
                     .endPoint(raw.getEndPoint())
                     .waypoints(raw.getWaypoints())
                     .distance(raw.getDistance())
                     .estimatedTime(estimatedTime)
-                    .difficulty(difficulty)
-                    .description(description)
+                    .difficulty(enhanced.getDifficulty())
+                    .description(enhanced.getDescription())
                     .build();
 
             // DB 저장 , ID 반환
