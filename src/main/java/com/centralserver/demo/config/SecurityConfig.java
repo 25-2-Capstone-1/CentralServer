@@ -22,7 +22,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.authentication.logout.LogoutFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -113,13 +112,6 @@ public class SecurityConfig {
                 .httpBasic(AbstractHttpConfigurer::disable);
 
         // 인가
-//        http
-//                .authorizeHttpRequests(auth -> auth
-//                        .anyRequest().permitAll());
-
-
-
-        // 인가
         http
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/jwt/exchange", "/jwt/refresh").permitAll()
@@ -135,6 +127,8 @@ public class SecurityConfig {
 
                         .requestMatchers("/settings", "/settings/**")
                                     .hasRole(UserRoleType.USER.name())
+
+                        .requestMatchers("/test/upload").hasRole(UserRoleType.USER.name())
 
                         .requestMatchers(HttpMethod.GET, "/user/**").hasRole(UserRoleType.USER.name())
                         .anyRequest().authenticated()
@@ -157,16 +151,6 @@ public class SecurityConfig {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return http.build();
-
-
-        //경로별 인가 작업
-        //**필수 수정**
-//        http
-//                .authorizeHttpRequests((auth) -> auth
-//                        .requestMatchers("/").permitAll()
-//                        .requestMatchers("/login", "/", "/join").permitAll()
-//                        .requestMatchers("/admin").hasRole("ADMIN")
-//                        .anyRequest().authenticated());
 
     }
 }

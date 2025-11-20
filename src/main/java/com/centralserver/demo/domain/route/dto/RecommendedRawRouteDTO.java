@@ -13,5 +13,6 @@ public class RecommendedRawRouteDTO {
     private Point startPoint;
     private Point endPoint;
     private List<Point> waypoints;
-    private double distance; //m 단위
+    private double distance;
+
 }
