@@ -26,13 +26,4 @@ public interface RecommendedRouteRepository extends JpaRepository<RecommendedRou
      */
     List<RecommendedRoute> findByCreatedAtBetween(LocalDateTime start, LocalDateTime end);
 
-    /**
-     * 4. routeId로 단일 삭제
-     */
-    void deleteByRouteId(Long routeId);
-
-    /**
-     * 5. routeId 존재 여부 체크
-     */
-    boolean existsByRouteId(Long routeId);
 }

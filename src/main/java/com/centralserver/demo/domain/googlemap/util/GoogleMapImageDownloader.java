@@ -1,4 +1,4 @@
-package com.centralserver.demo.domain.googlemap;
+package com.centralserver.demo.domain.googlemap.util;
 
 import org.springframework.stereotype.Component;
 

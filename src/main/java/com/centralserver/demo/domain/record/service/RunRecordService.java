@@ -1,9 +1,9 @@
 
 package com.centralserver.demo.domain.record.service;
 
-import com.centralserver.demo.domain.S3Service;
-import com.centralserver.demo.domain.googlemap.GoogleMapImageDownloader;
-import com.centralserver.demo.domain.googlemap.GoogleMapUrlBuilder;
+import com.centralserver.demo.domain.s3.service.S3Service;
+import com.centralserver.demo.domain.googlemap.util.GoogleMapImageDownloader;
+import com.centralserver.demo.domain.googlemap.util.GoogleMapUrlBuilder;
 import com.centralserver.demo.domain.googlemap.util.WaypointParser;
 import com.centralserver.demo.domain.record.dto.*;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
@@ -106,6 +106,7 @@ public class RunRecordService {
     }
 
     /** 1) 저장(Create) with IMG 파일 */
+    @Transactional
     public RunRecordResponseWithImgDTO createRecordWithImg(RunRecordRequestDTO dto) {
 
         // 1. SecurityContext 에서 이메일 꺼내기
@@ -260,7 +261,7 @@ public class RunRecordService {
                 .build();
     }
 
-    /** 3) 본인 기록 전체 조회(Read All) */
+    /** 3-1) 본인 기록 전체 조회(Read All) */
     public List<RunRecordSimpleResponseDTO> getMyRecords() {
         UserEntity user = getSessionUser();
 
@@ -281,12 +282,13 @@ public class RunRecordService {
                         .distanceKm(record.getDistanceKm())
                         .avgPace(record.getAvgPace())
                         .waypointsJson(record.getWaypointsJson())
+                        .imageUrl(record.getImageUrl())
                         .build()
                 )
                 .toList();
     }
 
-    /** 6) 북마크된 기록만 조회(Read Bookmarked Only) */
+    /** 3-2) 북마크된 기록만 조회(Read Bookmarked Only) */
     public List<RunRecordSimpleResponseDTO> getMyBookmarkedRecords() {
         UserEntity user = getSessionUser();
 
@@ -359,35 +361,6 @@ public class RunRecordService {
                 .build();
     }
 
-//    public RunRecordEntity patchRecord(Long recordId, RunRecordPatchDTO dto) throws AccessDeniedException {
-//
-//        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-//        String email = auth.getName();
-//
-//        UserEntity user = userRepository.findByUserEmailAndIsLock(email, false)
-//                .orElseThrow(() -> new UsernameNotFoundException(email));
-//
-//        RunRecordEntity record = runRecordRepository.findById(recordId)
-//                .orElseThrow(() -> new IllegalArgumentException("Record not found"));
-//
-//        // 권한 체크
-//        if (!record.getUser().getId().equals(user.getId())) {
-//            throw new AccessDeniedException("You don't have permission to edit this record.");
-//        }
-//
-//        // ✔ PATCH – null 아닌 값만 업데이트
-//        if (dto.getTitle() != null) record.setTitle(dto.getTitle());
-//        if (dto.getStartTime() != null) record.setStartTime(dto.getStartTime());
-//        if (dto.getDurationSeconds() != null) record.setDurationSeconds(dto.getDurationSeconds());
-//        if (dto.getDistanceKm() != null) record.setDistanceKm(dto.getDistanceKm());
-//        if (dto.getAvgPace() != null) record.setAvgPace(dto.getAvgPace());
-//        if (dto.getCalories() != null) record.setCalories(dto.getCalories());
-//        if (dto.getCadence() != null) record.setCadence(dto.getCadence());
-//        if (dto.getFullAddress() != null) record.setFullAddress(dto.getFullAddress());
-//        if (dto.getWaypointsJson() != null) record.setWaypointsJson(dto.getWaypointsJson());
-//
-//        return runRecordRepository.save(record);
-//    }
 
     /* -------- DELETE 영역 -------- */
 

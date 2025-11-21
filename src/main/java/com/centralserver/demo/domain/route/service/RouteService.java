@@ -1,9 +1,10 @@
 package com.centralserver.demo.domain.route.service;
 
+import com.centralserver.demo.domain.googlemap.service.StreetViewImageService;
 import com.centralserver.demo.domain.openai.service.GPTService;
 import com.centralserver.demo.domain.openai.dto.RouteEnhanceResult;
 import com.centralserver.demo.domain.route.client.RouteRecommendationClient;
-import com.centralserver.demo.domain.route.converter.RouteJsonConverter;
+import com.centralserver.demo.util.RouteJsonConverter;
 import com.centralserver.demo.domain.route.dto.Point;
 import com.centralserver.demo.domain.route.dto.RecommendRouteDTO;
 import com.centralserver.demo.domain.route.dto.RecommendedRawRouteDTO;
@@ -31,6 +32,7 @@ public class RouteService {
     private final RecommendedRouteRepository routeRepository;
     private final RouteJsonConverter jsonConverter;
     private final GPTService gptService;
+    private final StreetViewImageService streetViewImageService;
 
     /**
      * - 외부 추천 API 호출
@@ -80,6 +82,12 @@ public class RouteService {
             Long savedId = saveRecommendedRoute(dto);
             dto.setRouteId(savedId);
 
+
+            /** 🔥 Street View 이미지 생성 + 저장 */
+            generateStreetViewImages(savedId, raw.getWaypoints());
+
+
+
             // 프론트로 보낼 결과 리스트에 추가
             routes.add(dto);
         }
@@ -87,6 +95,25 @@ public class RouteService {
         // 3. 그대로 프론트에 반환
         return routes;
     }
+
+
+    private void generateStreetViewImages(Long routeId, List<Point> waypoints) {
+
+        RecommendedRoute route =
+                routeRepository.findById(routeId)
+                        .orElseThrow(() -> new RuntimeException("Route not found"));
+
+        // 🔥 필요한 경우 여러 지점 찍기
+        for (Point p : waypoints) {
+            streetViewImageService.createAndSaveImage(
+                    route,
+                    p.lat(),
+                    p.lng()
+            );
+        }
+    }
+
+
 
     /**
      * DB 저장 (원하는 경우)

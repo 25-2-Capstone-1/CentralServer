@@ -64,13 +64,27 @@ public class RunRecordController {
     }
 
     /** =========================
-     *   3) 사용자 전체 기록 조회 (Read All)
+     *   3-1) 사용자 전체 기록 조회 (Read All)
      *  GET /record/my
      * ========================= */
     @GetMapping("/my")
     public ResponseEntity<ApiResponseDTO<List<RunRecordSimpleResponseDTO>>> getMyRecords() {
 
         List<RunRecordSimpleResponseDTO> records = runRecordService.getMyRecords();
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(ApiResponseDTO.success(records));
+    }
+
+    /** =========================
+     *   3-2) 북마크된 기록만 조회
+     *  GET /records/my/bookmarks
+     * ========================= */
+    @GetMapping("/my/bookmarks")
+    public ResponseEntity<ApiResponseDTO<List<RunRecordSimpleResponseDTO>>> getMyBookmarkedRecords() {
+
+        List<RunRecordSimpleResponseDTO> records = runRecordService.getMyBookmarkedRecords();
 
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -108,17 +122,4 @@ public class RunRecordController {
                 .body(ApiResponseDTO.success(new MessageResponseDTO("Record deleted successfully.")));
     }
 
-    /** =========================
-     *   6) 북마크된 기록만 조회
-     *  GET /records/my/bookmarks
-     * ========================= */
-    @GetMapping("/my/bookmarks")
-    public ResponseEntity<ApiResponseDTO<List<RunRecordSimpleResponseDTO>>> getMyBookmarkedRecords() {
-
-        List<RunRecordSimpleResponseDTO> records = runRecordService.getMyBookmarkedRecords();
-
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .body(ApiResponseDTO.success(records));
-    }
 }

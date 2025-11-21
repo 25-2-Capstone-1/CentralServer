@@ -29,4 +29,6 @@ public class RunRecordSimpleResponseDTO {
 
     private Long recommendedRouteId;  // null 가능
 
+    private String imageUrl;  //null 가능
+
 }

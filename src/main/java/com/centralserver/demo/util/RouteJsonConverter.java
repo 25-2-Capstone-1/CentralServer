@@ -1,4 +1,4 @@
-package com.centralserver.demo.domain.route.converter;
+package com.centralserver.demo.util;
 
 import com.centralserver.demo.domain.route.dto.RecommendRouteDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;

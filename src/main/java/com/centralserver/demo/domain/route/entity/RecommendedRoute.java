@@ -1,10 +1,13 @@
 package com.centralserver.demo.domain.route.entity;
 
+import com.centralserver.demo.domain.googlemap.entity.StreetViewImage;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -24,6 +27,9 @@ public class RecommendedRoute {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long routeId;
+
+    @OneToMany(mappedBy = "recommendedRoute", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<StreetViewImage> streetViewImages = new ArrayList<>();
 
     /**
      * 경로 이름
