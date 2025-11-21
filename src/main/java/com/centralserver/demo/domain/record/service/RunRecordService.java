@@ -1,6 +1,10 @@
 
 package com.centralserver.demo.domain.record.service;
 
+import com.centralserver.demo.domain.S3Service;
+import com.centralserver.demo.domain.googlemap.GoogleMapImageDownloader;
+import com.centralserver.demo.domain.googlemap.GoogleMapUrlBuilder;
+import com.centralserver.demo.domain.googlemap.util.WaypointParser;
 import com.centralserver.demo.domain.record.dto.*;
 import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import com.centralserver.demo.domain.record.dto.RunRecordResponseDTO;
@@ -16,6 +20,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.nio.file.AccessDeniedException;
 import java.util.List;
@@ -27,6 +32,11 @@ public class RunRecordService {
     private final UserRepository userRepository;
     private final RecommendedRouteRepository recommendedRouteRepository;
     private final RunRecordRepository runRecordRepository;
+    private final GoogleMapImageDownloader downloader;
+    private final S3Service s3Service;
+    private final GoogleMapImageDownloader googleMapImageDownloader;
+    private final GoogleMapUrlBuilder googleMapUrlBuilder;
+    private final WaypointParser waypointParser;
 
     /** 로그인한 사용자 가져오기 */
     private UserEntity getSessionUser() {
@@ -43,6 +53,7 @@ public class RunRecordService {
     }
 
     /** 1) 저장(Create) */
+    @Transactional
     public RunRecordResponseDTO createRecord(RunRecordRequestDTO dto) {
 
         // 1. SecurityContext 에서 이메일 꺼내기
@@ -55,7 +66,7 @@ public class RunRecordService {
                     .getReferenceById(dto.getRecommendedRouteId());
         }
 
-        //저장값
+        // 3. RunRecordEntity 기본 정보 저장 (이미지 제외)
         RunRecordEntity record = RunRecordEntity.builder()
                 .user(user)
                 .recommendedRoute(recommendedRoute)
@@ -91,6 +102,88 @@ public class RunRecordService {
                                 ? saved.getRecommendedRoute().getRouteId()
                                 : null
                 )
+                .build();
+    }
+
+    /** 1) 저장(Create) with IMG 파일 */
+    public RunRecordResponseWithImgDTO createRecordWithImg(RunRecordRequestDTO dto) {
+
+        // 1. SecurityContext 에서 이메일 꺼내기
+        UserEntity user = getSessionUser();
+
+        // 2. 추천 경로 엔티티 (optional)
+        RecommendedRoute recommendedRoute = null;
+        if (dto.getRecommendedRouteId() != null) {
+            recommendedRoute = recommendedRouteRepository
+                    .getReferenceById(dto.getRecommendedRouteId());
+        }
+
+        // 3. RunRecordEntity 기본 정보 저장 (이미지 제외)
+        RunRecordEntity record = RunRecordEntity.builder()
+                .user(user)
+                .recommendedRoute(recommendedRoute)
+                .title(dto.getTitle())
+                .startTime(dto.getStartTime())
+                .durationSeconds(dto.getDurationSeconds())
+                .distanceKm(dto.getDistanceKm())
+                .avgPace(dto.getAvgPace())
+                .calories(calculateCalories(dto))
+                .cadence(calculateCadence(dto))
+                .fullAddress(dto.getFullAddress())
+                .waypointsJson(dto.getWaypointsJson())
+                .bookmark(false)
+                .build();
+
+        RunRecordEntity saved = runRecordRepository.save(record);
+
+        /* =============================================
+       🔥 이미지 생성 + 저장 (DB는 1번만 저장되도록 최적화)
+       ============================================= */
+
+        try {
+            // A) 경로 파싱
+            List<double[]> waypoints = waypointParser.parse(dto.getWaypointsJson());
+
+            // B) Static Map URL 생성
+            String mapUrl = googleMapUrlBuilder.buildStaticMapURL(waypoints);
+
+            // C) 이미지 다운로드
+            byte[] bytes = googleMapImageDownloader.download(mapUrl);
+
+            // D) S3 Key
+            String key = "run-records/" + saved.getId() + ".png";
+
+            // E) 업로드
+            String imageUrl = s3Service.uploadBytes(bytes, key, "image/png");
+
+            // F) saved는 이미 영속 엔티티라 setImageUrl()만 하면 DB에 자동 update됨
+            saved.setImageUrl(imageUrl);
+
+            // ❌ runRecordRepository.save(saved); 필요 없음 (영속성 컨텍스트가 자동 반영)
+
+        } catch (Exception e) {
+            throw new RuntimeException("러닝 경로 이미지 생성에 실패했습니다.");
+        }
+
+        // 4. 리턴값 (이미지 URL까지 포함된 DTO)
+        return RunRecordResponseWithImgDTO.builder()
+                .id(saved.getId())
+                .title(saved.getTitle())
+                .bookmark(saved.isBookmark())
+                .startTime(saved.getStartTime())
+                .durationSeconds(saved.getDurationSeconds())
+                .distanceKm(saved.getDistanceKm())
+                .avgPace(saved.getAvgPace())
+                .calories(saved.getCalories())
+                .cadence(saved.getCadence())
+                .fullAddress(saved.getFullAddress())
+                .waypointsJson(saved.getWaypointsJson())
+                .recommendedRouteId(
+                        saved.getRecommendedRoute() != null
+                                ? saved.getRecommendedRoute().getRouteId()
+                                : null
+                )
+                .imageUrl(saved.getImageUrl())   // 🔥 추가됨
                 .build();
     }
 

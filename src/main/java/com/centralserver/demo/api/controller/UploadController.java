@@ -1,6 +1,8 @@
 package com.centralserver.demo.api.controller;
 
 import com.centralserver.demo.domain.S3Service;
+import com.centralserver.demo.domain.googlemap.service.MapImageService;
+import com.centralserver.demo.domain.record.dto.RunRecordRequestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

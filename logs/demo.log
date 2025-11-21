@@ -1,22 +1,22 @@
-2025-11-18T01:21:58.348+09:00  INFO 5660 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 5660 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-18T01:21:58.358+09:00  INFO 5660 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-18T01:21:58.455+09:00  INFO 5660 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-18T01:21:58.456+09:00  INFO 5660 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-18T01:22:00.355+09:00  INFO 5660 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-18T01:22:00.900+09:00  INFO 5660 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 524 ms. Found 6 JPA repository interfaces.
-2025-11-18T01:22:03.878+09:00  INFO 5660 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-18T01:22:03.961+09:00  INFO 5660 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-18T01:22:03.963+09:00  INFO 5660 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-18T01:22:04.365+09:00  INFO 5660 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-18T01:22:04.367+09:00  INFO 5660 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5878 ms
-2025-11-18T01:22:05.320+09:00  INFO 5660 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-18T01:22:05.788+09:00  INFO 5660 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-18T01:22:05.987+09:00  INFO 5660 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-18T01:22:08.276+09:00  INFO 5660 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-18T01:22:08.685+09:00  INFO 5660 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-18T01:22:13.745+09:00  INFO 5660 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@373b7ec7
-2025-11-18T01:22:13.754+09:00  INFO 5660 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-18T01:22:14.381+09:00  INFO 5660 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-11-21T13:33:26.360+09:00  INFO 4708 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 4708 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
+2025-11-21T13:33:26.371+09:00  INFO 4708 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-21T13:33:26.488+09:00  INFO 4708 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-21T13:33:26.489+09:00  INFO 4708 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-21T13:33:28.345+09:00  INFO 4708 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-21T13:33:28.775+09:00  INFO 4708 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 417 ms. Found 6 JPA repository interfaces.
+2025-11-21T13:33:30.160+09:00  INFO 4708 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-21T13:33:30.181+09:00  INFO 4708 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-21T13:33:30.182+09:00  INFO 4708 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-21T13:33:30.304+09:00  INFO 4708 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-21T13:33:30.305+09:00  INFO 4708 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3785 ms
+2025-11-21T13:33:30.765+09:00  INFO 4708 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-21T13:33:30.953+09:00  INFO 4708 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-21T13:33:31.060+09:00  INFO 4708 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-21T13:33:31.710+09:00  INFO 4708 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-21T13:33:31.768+09:00  INFO 4708 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-21T13:33:34.337+09:00  INFO 4708 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15b930cd
+2025-11-21T13:33:34.345+09:00  INFO 4708 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-21T13:33:35.178+09:00  INFO 4708 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.42
@@ -24,56 +24,53 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-11-18T01:22:20.290+09:00  INFO 5660 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-18T01:22:27.481+09:00  INFO 5660 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T01:22:30.235+09:00  INFO 5660 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-18T01:22:30.499+09:00  WARN 5660 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-18T01:22:31.337+09:00 DEBUG 5660 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 30 mappings in 'requestMappingHandlerMapping'
-2025-11-18T01:22:31.848+09:00 DEBUG 5660 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-18T01:22:32.720+09:00 DEBUG 5660 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-18T01:22:34.858+09:00  INFO 5660 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-18T01:22:35.495+09:00  INFO 5660 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-18T01:22:36.024+09:00  INFO 5660 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-18T01:22:36.086+09:00  INFO 5660 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 38.561 seconds (process running for 40.117)
-2025-11-18T01:27:20.617+09:00  INFO 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-18T01:27:20.629+09:00  INFO 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-18T01:27:20.632+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-18T01:27:20.632+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-18T01:27:20.632+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-18T01:27:20.723+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2dfa4c51
-2025-11-18T01:27:20.725+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@382b9313
-2025-11-18T01:27:20.732+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-18T01:27:20.732+09:00  INFO 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 100 ms
-2025-11-18T01:27:20.971+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/user", parameters={}
-2025-11-18T01:27:20.978+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UserController#joinApi(UserRequestDTO)
-2025-11-18T01:27:21.555+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.user.dto.UserRequestDTO@168c816b]
-2025-11-18T01:27:24.943+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:27:24.955+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponseDTO(success=true, data=UserJoinResponseDTO(userId=17, username=coco@naver.com), error=nul (truncated)...]
-2025-11-18T01:27:25.018+09:00 DEBUG 5660 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2025-11-18T01:28:34.579+09:00  INFO 5660 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-18T01:28:34.608+09:00  INFO 5660 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-18T01:28:34.662+09:00  INFO 5660 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T01:28:34.667+09:00  INFO 5660 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-18T01:28:34.678+09:00  INFO 5660 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-18T01:29:17.468+09:00  INFO 6832 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 6832 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-18T01:29:17.472+09:00  INFO 6832 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-18T01:29:17.569+09:00  INFO 6832 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-18T01:29:17.569+09:00  INFO 6832 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-18T01:29:19.138+09:00  INFO 6832 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-18T01:29:19.475+09:00  INFO 6832 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 323 ms. Found 6 JPA repository interfaces.
-2025-11-18T01:29:20.702+09:00  INFO 6832 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-18T01:29:20.732+09:00  INFO 6832 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-18T01:29:20.733+09:00  INFO 6832 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-18T01:29:20.825+09:00  INFO 6832 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-18T01:29:20.825+09:00  INFO 6832 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3228 ms
-2025-11-18T01:29:21.147+09:00  INFO 6832 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-18T01:29:21.266+09:00  INFO 6832 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-18T01:29:21.320+09:00  INFO 6832 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-18T01:29:21.837+09:00  INFO 6832 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-18T01:29:21.885+09:00  INFO 6832 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-18T01:29:24.292+09:00  INFO 6832 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73999374
-2025-11-18T01:29:24.300+09:00  INFO 6832 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-18T01:29:24.791+09:00  INFO 6832 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-11-21T13:33:46.513+09:00  INFO 4708 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-21T13:33:49.893+09:00  INFO 4708 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-21T13:33:56.782+09:00  INFO 4708 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-11-21T13:33:56.907+09:00  WARN 4708 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-21T13:33:57.824+09:00 DEBUG 4708 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 29 mappings in 'requestMappingHandlerMapping'
+2025-11-21T13:33:58.313+09:00 DEBUG 4708 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-21T13:33:58.716+09:00 DEBUG 4708 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-21T13:33:59.910+09:00  INFO 4708 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-11-21T13:34:00.337+09:00  INFO 4708 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-21T13:34:00.575+09:00  INFO 4708 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-21T13:34:00.635+09:00  INFO 4708 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 35.247 seconds (process running for 38.096)
+2025-11-21T13:37:44.244+09:00  INFO 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-21T13:37:44.251+09:00  INFO 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-21T13:37:44.254+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-11-21T13:37:44.255+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-11-21T13:37:44.255+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-11-21T13:37:44.260+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@15eb7d34
+2025-11-21T13:37:44.263+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7eb11089
+2025-11-21T13:37:44.268+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-21T13:37:44.272+09:00  INFO 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2025-11-21T13:37:44.984+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/records/img", parameters={}
+2025-11-21T13:37:45.004+09:00  WARN 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-11-21T13:37:45.004+09:00 DEBUG 4708 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2025-11-21T13:39:35.160+09:00  INFO 4708 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-21T13:39:35.187+09:00  INFO 4708 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-21T13:39:35.255+09:00  INFO 4708 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-21T13:39:35.268+09:00  INFO 4708 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-21T13:39:35.345+09:00  INFO 4708 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-21T13:39:57.560+09:00  INFO 22324 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 22324 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
+2025-11-21T13:39:57.567+09:00  INFO 22324 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-21T13:39:57.953+09:00  INFO 22324 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-21T13:39:57.956+09:00  INFO 22324 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-21T13:40:00.618+09:00  INFO 22324 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-21T13:40:01.013+09:00  INFO 22324 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 382 ms. Found 6 JPA repository interfaces.
+2025-11-21T13:40:02.468+09:00  INFO 22324 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-21T13:40:02.493+09:00  INFO 22324 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-21T13:40:02.493+09:00  INFO 22324 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-21T13:40:02.587+09:00  INFO 22324 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-21T13:40:02.588+09:00  INFO 22324 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4505 ms
+2025-11-21T13:40:02.874+09:00  INFO 22324 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-21T13:40:02.988+09:00  INFO 22324 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-21T13:40:03.041+09:00  INFO 22324 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-21T13:40:03.563+09:00  INFO 22324 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-21T13:40:03.608+09:00  INFO 22324 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-21T13:40:06.460+09:00  INFO 22324 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a2eee8
+2025-11-21T13:40:06.465+09:00  INFO 22324 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-21T13:40:06.987+09:00  INFO 22324 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.42
@@ -81,725 +78,40 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-11-18T01:29:26.344+09:00  INFO 6832 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-18T01:29:29.304+09:00  INFO 6832 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T01:29:32.214+09:00  INFO 6832 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-18T01:29:32.302+09:00  WARN 6832 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-18T01:29:33.012+09:00 DEBUG 6832 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 30 mappings in 'requestMappingHandlerMapping'
-2025-11-18T01:29:34.120+09:00 DEBUG 6832 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-18T01:29:34.544+09:00 DEBUG 6832 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-18T01:29:35.580+09:00  INFO 6832 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-18T01:29:35.937+09:00  INFO 6832 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-18T01:29:36.351+09:00  INFO 6832 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-18T01:29:36.390+09:00  INFO 6832 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 19.797 seconds (process running for 21.183)
-2025-11-18T01:29:44.894+09:00  INFO 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-18T01:29:44.896+09:00  INFO 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-18T01:29:44.898+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-18T01:29:44.900+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-18T01:29:44.901+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-18T01:29:44.905+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@371152db
-2025-11-18T01:29:44.909+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@f5de8a9
-2025-11-18T01:29:44.911+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-18T01:29:44.911+09:00  INFO 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2025-11-18T01:30:37.185+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/settings/voice", parameters={}
-2025-11-18T01:30:37.191+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getVoiceSettings()
-2025-11-18T01:30:38.987+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:30:38.988+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsResponseDTO@6748d6f0]
-2025-11-18T01:30:39.008+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:31:17.102+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/settings/timer", parameters={}
-2025-11-18T01:31:17.106+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getTimerSettings()
-2025-11-18T01:31:18.619+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:31:18.619+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO@19dd590a]
-2025-11-18T01:31:18.625+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:32:09.040+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/settings/voice", parameters={}
-2025-11-18T01:32:09.043+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#updateVoiceSettings(VoiceSettingsRequestDTO)
-2025-11-18T01:32:09.268+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsRequestDTO@65d8df81]
-2025-11-18T01:32:10.946+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:32:10.950+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsResponseDTO@3b4e480e]
-2025-11-18T01:32:10.950+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:32:18.486+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/settings/voice", parameters={}
-2025-11-18T01:32:18.488+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getVoiceSettings()
-2025-11-18T01:32:20.056+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:32:20.062+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsResponseDTO@601c1be3]
-2025-11-18T01:32:20.065+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:32:34.835+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/settings/voice", parameters={}
-2025-11-18T01:32:34.837+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#updateVoiceSettings(VoiceSettingsRequestDTO)
-2025-11-18T01:32:34.837+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsRequestDTO@1b6b2786]
-2025-11-18T01:32:36.642+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:32:36.642+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsResponseDTO@79c0ba]
-2025-11-18T01:32:36.650+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:32:41.054+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/settings/voice", parameters={}
-2025-11-18T01:32:41.054+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getVoiceSettings()
-2025-11-18T01:32:42.993+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:32:42.996+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsResponseDTO@6205674a]
-2025-11-18T01:32:42.998+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:33:26.096+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/settings/timer", parameters={}
-2025-11-18T01:33:26.101+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getTimerSettings()
-2025-11-18T01:33:27.742+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:33:27.742+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO@7c7d72b0]
-2025-11-18T01:33:27.747+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:33:40.760+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/settings/timer", parameters={}
-2025-11-18T01:33:40.760+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getTimerSettings()
-2025-11-18T01:33:42.336+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:33:42.339+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO@64dc9277]
-2025-11-18T01:33:42.340+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:34:35.874+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : PUT "/settings/timer", parameters={}
-2025-11-18T01:34:35.874+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#updateTimerSettings(TimerSettingsRequestDTO)
-2025-11-18T01:34:35.898+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsRequestDTO@4cce0339]
-2025-11-18T01:34:37.684+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:34:37.684+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO@5d67b3da]
-2025-11-18T01:34:37.691+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:34:43.293+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/settings/timer", parameters={}
-2025-11-18T01:34:43.293+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getTimerSettings()
-2025-11-18T01:34:44.647+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:34:44.647+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO@4326769c]
-2025-11-18T01:34:44.647+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:38:56.400+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/settings/voice", parameters={}
-2025-11-18T01:38:56.424+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getVoiceSettings()
-2025-11-18T01:38:58.815+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:38:58.818+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsResponseDTO@453f6e7e]
-2025-11-18T01:38:58.859+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:39:48.604+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : PUT "/settings/voice", parameters={}
-2025-11-18T01:39:48.604+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#updateVoiceSettings(VoiceSettingsRequestDTO)
-2025-11-18T01:39:48.637+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsRequestDTO@1e05db10]
-2025-11-18T01:39:51.129+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:39:51.129+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsResponseDTO@655ff0cc]
-2025-11-18T01:39:51.129+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:41:02.328+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/settings/timer", parameters={}
-2025-11-18T01:41:02.330+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#getTimerSettings()
-2025-11-18T01:41:03.829+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:41:03.829+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO@3de4e436]
-2025-11-18T01:41:03.838+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:41:50.760+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : PUT "/settings/timer", parameters={}
-2025-11-18T01:41:50.768+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.SettingsController#updateTimerSettings(TimerSettingsRequestDTO)
-2025-11-18T01:41:50.772+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsRequestDTO@2cf1fcef]
-2025-11-18T01:41:52.675+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T01:41:52.678+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO@6cfb2859]
-2025-11-18T01:41:52.684+09:00 DEBUG 6832 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T01:42:27.117+09:00  INFO 6832 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-18T01:42:27.146+09:00  INFO 6832 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-18T01:42:27.533+09:00  INFO 6832 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T01:42:27.556+09:00  INFO 6832 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-18T01:42:27.582+09:00  INFO 6832 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-18T12:54:58.937+09:00  INFO 16160 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 16160 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-18T12:54:58.954+09:00  INFO 16160 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-18T12:54:59.282+09:00  INFO 16160 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-18T12:54:59.293+09:00  INFO 16160 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-18T12:55:06.522+09:00  INFO 16160 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-18T12:55:07.969+09:00  INFO 16160 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1381 ms. Found 6 JPA repository interfaces.
-2025-11-18T12:55:12.149+09:00  INFO 16160 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-18T12:55:12.194+09:00  INFO 16160 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-18T12:55:12.196+09:00  INFO 16160 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-18T12:55:12.408+09:00  INFO 16160 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-18T12:55:12.412+09:00  INFO 16160 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13038 ms
-2025-11-18T12:55:12.934+09:00  INFO 16160 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-18T12:55:13.080+09:00  INFO 16160 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-18T12:55:13.125+09:00  INFO 16160 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-18T12:55:14.144+09:00  INFO 16160 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-18T12:55:14.223+09:00  INFO 16160 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-18T12:55:16.787+09:00  INFO 16160 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b819f1a
-2025-11-18T12:55:16.799+09:00  INFO 16160 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-18T12:55:17.601+09:00  INFO 16160 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-18T12:55:23.459+09:00  INFO 16160 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-18T12:55:27.199+09:00  INFO 16160 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T12:55:30.021+09:00  INFO 16160 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-18T12:55:30.153+09:00  WARN 16160 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-18T12:55:30.935+09:00 DEBUG 16160 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
-2025-11-18T12:55:31.377+09:00 DEBUG 16160 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-18T12:55:31.691+09:00 DEBUG 16160 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-18T12:55:32.620+09:00  INFO 16160 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-18T12:55:32.925+09:00  INFO 16160 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-18T12:55:33.347+09:00  INFO 16160 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-18T12:55:33.397+09:00  INFO 16160 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 39.311 seconds (process running for 42.134)
-2025-11-18T12:55:45.222+09:00  INFO 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-18T12:55:45.222+09:00  INFO 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-18T12:55:45.230+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-18T12:55:45.230+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-18T12:55:45.233+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-18T12:55:45.233+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7127c6d1
-2025-11-18T12:55:45.233+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@d37a873
-2025-11-18T12:55:45.239+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-18T12:55:45.239+09:00  INFO 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2025-11-18T12:56:05.788+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/user", parameters={}
-2025-11-18T12:56:05.793+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UserController#deleteUserApi(UserRequestDTO)
-2025-11-18T12:56:05.987+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.user.dto.UserRequestDTO@65b14edc]
-2025-11-18T12:56:09.518+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T12:56:09.528+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponseDTO(success=true, data=MessageResponseDTO(message=Account successfully deleted.), error=n (truncated)...]
-2025-11-18T12:56:09.546+09:00 DEBUG 16160 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T12:56:31.875+09:00  INFO 16160 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-18T12:56:31.906+09:00  INFO 16160 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-18T12:56:31.984+09:00  INFO 16160 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T12:56:31.986+09:00  INFO 16160 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-18T12:56:31.998+09:00  INFO 16160 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-18T13:45:35.523+09:00  INFO 14724 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 14724 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-18T13:45:35.528+09:00  INFO 14724 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-18T13:45:35.631+09:00  INFO 14724 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-18T13:45:35.634+09:00  INFO 14724 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-18T13:45:38.221+09:00  INFO 14724 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-18T13:45:40.113+09:00  INFO 14724 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1840 ms. Found 6 JPA repository interfaces.
-2025-11-18T13:45:45.159+09:00  INFO 14724 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-18T13:45:45.299+09:00  INFO 14724 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-18T13:45:45.299+09:00  INFO 14724 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-18T13:45:45.984+09:00  INFO 14724 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-18T13:45:45.984+09:00  INFO 14724 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10309 ms
-2025-11-18T13:45:46.879+09:00  INFO 14724 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-18T13:45:47.256+09:00  INFO 14724 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-18T13:45:47.518+09:00  INFO 14724 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-18T13:45:48.993+09:00  INFO 14724 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-18T13:45:49.146+09:00  INFO 14724 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-18T13:45:52.866+09:00  INFO 14724 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33bad352
-2025-11-18T13:45:52.876+09:00  INFO 14724 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-18T13:45:54.546+09:00  INFO 14724 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-18T13:45:59.236+09:00  INFO 14724 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-18T13:46:03.150+09:00  INFO 14724 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T13:46:06.720+09:00  INFO 14724 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-18T13:46:06.837+09:00  WARN 14724 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-18T13:46:07.521+09:00 DEBUG 14724 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
-2025-11-18T13:46:07.981+09:00 DEBUG 14724 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-18T13:46:08.293+09:00 DEBUG 14724 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-18T13:46:08.880+09:00  INFO 14724 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-18T13:46:09.029+09:00  INFO 14724 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-18T13:46:09.140+09:00  INFO 14724 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-18T13:46:09.161+09:00  INFO 14724 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 34.539 seconds (process running for 36.413)
-2025-11-18T13:47:45.951+09:00  INFO 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-18T13:47:45.976+09:00  INFO 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-18T13:47:45.983+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-18T13:47:45.994+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-18T13:47:45.996+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-18T13:47:46.067+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3075dcea
-2025-11-18T13:47:46.070+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e87ee25
-2025-11-18T13:47:46.074+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-18T13:47:46.075+09:00  INFO 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 99 ms
-2025-11-18T13:47:46.400+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user", parameters={}
-2025-11-18T13:47:46.413+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UserController#joinApi(UserRequestDTO)
-2025-11-18T13:47:47.054+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.user.dto.UserRequestDTO@5d0fc985]
-2025-11-18T13:47:50.558+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T13:47:50.574+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponseDTO(success=true, data=UserJoinResponseDTO(userId=18, username=coco@naver.com), error=nul (truncated)...]
-2025-11-18T13:47:50.641+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2025-11-18T13:48:20.319+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
-2025-11-18T13:48:20.319+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
-2025-11-18T13:48:20.388+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
-2025-11-18T13:48:21.105+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.r.f.client.ExchangeFunctions       : [63f1e161] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:48:23.755+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [63f1e161] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:48:26.059+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [63f1e161] [5e8b8ad4-1] Response 429 TOO_MANY_REQUESTS
-2025-11-18T13:48:26.147+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [63f1e161] [5e8b8ad4-1] Read 337 bytes
-2025-11-18T13:48:26.627+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
-2025-11-18T13:48:26.629+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-11-18T13:48:26.631+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
-2025-11-18T13:48:26.637+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.reactive.function.client.WebClientResponseException$TooManyRequests: 429 Too Many Requests from POST https://api.openai.com/v1/chat/completions]
-2025-11-18T13:48:26.638+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-11-18T13:49:44.714+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
-2025-11-18T13:49:44.716+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
-2025-11-18T13:49:44.720+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
-2025-11-18T13:49:45.058+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.r.f.client.ExchangeFunctions       : [309c81fb] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:49:45.061+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [309c81fb] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:49:45.936+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [309c81fb] [5e8b8ad4-2] Response 429 TOO_MANY_REQUESTS
-2025-11-18T13:49:45.938+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [309c81fb] [5e8b8ad4-2] Read 337 bytes
-2025-11-18T13:49:46.263+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
-2025-11-18T13:49:46.265+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-11-18T13:49:46.266+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
-2025-11-18T13:49:46.268+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.reactive.function.client.WebClientResponseException$TooManyRequests: 429 Too Many Requests from POST https://api.openai.com/v1/chat/completions]
-2025-11-18T13:49:46.269+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-11-18T13:54:14.257+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
-2025-11-18T13:54:14.263+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
-2025-11-18T13:54:14.283+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
-2025-11-18T13:54:14.630+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [4b1d0f67] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:54:14.641+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4b1d0f67] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:54:17.587+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [4b1d0f67] [5e8b8ad4-3] Response 200 OK
-2025-11-18T13:54:17.632+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4b1d0f67] [5e8b8ad4-3] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:54:17.881+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [2515fd3c] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:54:17.884+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2515fd3c] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:54:19.942+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [2515fd3c] [5e8b8ad4-4] Response 200 OK
-2025-11-18T13:54:19.950+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2515fd3c] [5e8b8ad4-4] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:54:20.126+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [2494bc24] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:54:20.128+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2494bc24] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:54:22.470+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [2494bc24] [5e8b8ad4-5] Response 200 OK
-2025-11-18T13:54:22.475+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [2494bc24] [5e8b8ad4-5] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:54:22.976+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T13:54:22.978+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.centralserver.demo.domain.route.dto.RecommendRouteDTO@10bd76d3, com.centralserver.demo.domain.r (truncated)...]
-2025-11-18T13:54:23.008+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T13:55:15.394+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
-2025-11-18T13:55:15.399+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
-2025-11-18T13:55:15.436+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
-2025-11-18T13:55:15.797+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.r.f.client.ExchangeFunctions       : [a23b909] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:55:15.806+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [a23b909] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:55:18.066+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [a23b909] [5e8b8ad4-6] Response 200 OK
-2025-11-18T13:55:18.072+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [a23b909] [5e8b8ad4-6] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:55:18.260+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.r.f.client.ExchangeFunctions       : [df17050] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:55:18.263+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [df17050] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:55:21.080+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [df17050] [5e8b8ad4-7] Response 200 OK
-2025-11-18T13:55:21.085+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [df17050] [5e8b8ad4-7] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:55:21.254+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.r.f.client.ExchangeFunctions       : [55e648d] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:55:21.257+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [55e648d] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:55:23.209+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [55e648d] [5e8b8ad4-8] Response 200 OK
-2025-11-18T13:55:23.216+09:00 DEBUG 14724 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [55e648d] [5e8b8ad4-8] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content=```json<EOL>{<EOL>  "d (truncated)...]
-2025-11-18T13:55:24.003+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
-2025-11-18T13:55:24.005+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-11-18T13:55:24.005+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
-2025-11-18T13:55:24.014+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: ❌ GPT JSON 파싱 실패: ```json<EOL>{<EOL>  "difficulty": "medium",<EOL>  "routeName": "여의도 한강 러닝 코스 3.1km",<EOL>  "description": "여유로운 한강을 따라 달리며 멋진 경치를 감상해보세요! 일정한 경사를 가진 이 코스에서 신선한 바람을 느껴보세요."<EOL>}<EOL>```]
-2025-11-18T13:55:24.014+09:00 DEBUG 14724 --- [demo] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-11-18T13:57:27.025+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-18T13:57:27.158+09:00  INFO 14724 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-18T13:57:27.446+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T13:57:27.511+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-18T13:57:27.568+09:00  INFO 14724 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-18T13:57:43.856+09:00  INFO 13984 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 13984 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-18T13:57:43.859+09:00  INFO 13984 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-18T13:57:43.966+09:00  INFO 13984 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-18T13:57:43.966+09:00  INFO 13984 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-18T13:57:46.069+09:00  INFO 13984 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-18T13:57:46.401+09:00  INFO 13984 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 324 ms. Found 6 JPA repository interfaces.
-2025-11-18T13:57:47.722+09:00  INFO 13984 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-18T13:57:47.759+09:00  INFO 13984 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-18T13:57:47.759+09:00  INFO 13984 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-18T13:57:47.866+09:00  INFO 13984 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-18T13:57:47.866+09:00  INFO 13984 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3863 ms
-2025-11-18T13:57:48.257+09:00  INFO 13984 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-18T13:57:48.409+09:00  INFO 13984 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-18T13:57:48.480+09:00  INFO 13984 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-18T13:57:49.111+09:00  INFO 13984 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-18T13:57:49.167+09:00  INFO 13984 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-18T13:57:51.370+09:00  INFO 13984 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@544ffd13
-2025-11-18T13:57:51.382+09:00  INFO 13984 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-18T13:57:52.025+09:00  INFO 13984 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-18T13:57:54.396+09:00  INFO 13984 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-18T13:57:57.185+09:00  INFO 13984 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T13:58:00.303+09:00  INFO 13984 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-18T13:58:00.478+09:00  WARN 13984 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-18T13:58:00.849+09:00 DEBUG 13984 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
-2025-11-18T13:58:01.068+09:00 DEBUG 13984 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-18T13:58:01.250+09:00 DEBUG 13984 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-18T13:58:01.820+09:00  INFO 13984 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-18T13:58:01.962+09:00  INFO 13984 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-18T13:58:02.076+09:00  INFO 13984 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-18T13:58:02.101+09:00  INFO 13984 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 19.358 seconds (process running for 21.681)
-2025-11-18T13:58:17.179+09:00  INFO 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-18T13:58:17.181+09:00  INFO 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-18T13:58:17.182+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-18T13:58:17.183+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-18T13:58:17.183+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-18T13:58:17.186+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7786af
-2025-11-18T13:58:17.189+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@35117ad5
-2025-11-18T13:58:17.190+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-18T13:58:17.191+09:00  INFO 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2025-11-18T13:58:17.815+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/routes/recommend", parameters={}
-2025-11-18T13:58:17.823+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RouteController#recommendRoutes(RouteRequestDTO)
-2025-11-18T13:58:18.100+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RouteRequestDTO[myPoint=Point[lat=37.5333, lng=127.005], startPoint=Point[lat=37.54, lng=127.07], en (truncated)...]
-2025-11-18T13:58:19.519+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.r.f.client.ExchangeFunctions       : [388a13b9] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:58:22.068+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [388a13b9] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:58:25.283+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [388a13b9] [7df58689-1] Response 200 OK
-2025-11-18T13:58:25.449+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [388a13b9] [7df58689-1] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:58:25.831+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.r.f.client.ExchangeFunctions       : [1a51d9cf] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:58:25.833+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [1a51d9cf] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:58:28.378+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [1a51d9cf] [7df58689-2] Response 200 OK
-2025-11-18T13:58:28.378+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [1a51d9cf] [7df58689-2] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:58:28.555+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.r.f.client.ExchangeFunctions       : [6e4fd44e] HTTP POST https://api.openai.com/v1/chat/completions
-2025-11-18T13:58:28.555+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [6e4fd44e] Encoding [ChatRequest(model=gpt-4o-mini, messages=[ChatMessage(role=user, content=You are a running route reco (truncated)...]
-2025-11-18T13:58:30.660+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [6e4fd44e] [7df58689-3] Response 200 OK
-2025-11-18T13:58:30.667+09:00 DEBUG 13984 --- [demo] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [6e4fd44e] [7df58689-3] Decoded [ChatResponse(choices=[ChatResponse.Choice(message=ChatMessage(role=assistant, content={<EOL>  "difficult (truncated)...]
-2025-11-18T13:58:31.239+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-18T13:58:31.244+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.centralserver.demo.domain.route.dto.RecommendRouteDTO@5f11f2df, com.centralserver.demo.domain.r (truncated)...]
-2025-11-18T13:58:31.280+09:00 DEBUG 13984 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-18T13:59:10.961+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-18T13:59:10.969+09:00  INFO 13984 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-18T13:59:10.999+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-18T13:59:10.999+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-18T13:59:10.999+09:00  INFO 13984 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-20T16:04:17.291+09:00  INFO 23016 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 23016 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-20T16:04:17.295+09:00  INFO 23016 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-20T16:04:17.384+09:00  INFO 23016 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-20T16:04:17.385+09:00  INFO 23016 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-20T16:04:19.332+09:00  INFO 23016 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-20T16:04:19.724+09:00  INFO 23016 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 365 ms. Found 6 JPA repository interfaces.
-2025-11-20T16:04:21.168+09:00  INFO 23016 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-20T16:04:21.198+09:00  INFO 23016 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-20T16:04:21.199+09:00  INFO 23016 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-20T16:04:21.321+09:00  INFO 23016 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-20T16:04:21.322+09:00  INFO 23016 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3890 ms
-2025-11-20T16:04:21.751+09:00  INFO 23016 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-20T16:04:21.881+09:00  INFO 23016 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-20T16:04:21.944+09:00  INFO 23016 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-20T16:04:22.478+09:00  INFO 23016 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-20T16:04:22.530+09:00  INFO 23016 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-20T16:04:25.679+09:00  INFO 23016 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ab7ca3
-2025-11-20T16:04:25.700+09:00  INFO 23016 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-20T16:04:26.577+09:00  INFO 23016 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-20T16:04:32.480+09:00  INFO 23016 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-20T16:04:36.331+09:00  INFO 23016 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:04:38.669+09:00  INFO 23016 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-20T16:04:38.712+09:00  WARN 23016 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-20T16:04:38.972+09:00 DEBUG 23016 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
-2025-11-20T16:04:39.106+09:00 DEBUG 23016 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-20T16:04:39.228+09:00 DEBUG 23016 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-20T16:04:39.585+09:00  INFO 23016 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-20T16:04:39.680+09:00  INFO 23016 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-20T16:04:39.767+09:00  INFO 23016 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-20T16:04:39.783+09:00  INFO 23016 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 23.433 seconds (process running for 25.198)
-2025-11-20T16:06:15.549+09:00  INFO 23016 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-20T16:06:15.585+09:00  INFO 23016 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-20T16:06:15.670+09:00  INFO 23016 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:06:15.693+09:00  INFO 23016 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-20T16:06:15.770+09:00  INFO 23016 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-20T16:07:29.746+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 19476 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-20T16:07:29.752+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-20T16:07:29.835+09:00  INFO 19476 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-20T16:07:29.835+09:00  INFO 19476 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-20T16:07:31.553+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-20T16:07:31.927+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 352 ms. Found 6 JPA repository interfaces.
-2025-11-20T16:07:33.202+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-20T16:07:33.225+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-20T16:07:33.225+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-20T16:07:33.332+09:00  INFO 19476 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-20T16:07:33.332+09:00  INFO 19476 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3446 ms
-2025-11-20T16:07:33.639+09:00  INFO 19476 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-20T16:07:33.737+09:00  INFO 19476 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-20T16:07:33.815+09:00  INFO 19476 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-20T16:07:34.335+09:00  INFO 19476 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-20T16:07:34.393+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-20T16:07:37.672+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cfe7e9b
-2025-11-20T16:07:37.680+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-20T16:07:38.256+09:00  INFO 19476 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-20T16:07:39.846+09:00  INFO 19476 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-20T16:07:43.518+09:00  INFO 19476 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:07:45.820+09:00  INFO 19476 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-20T16:07:45.875+09:00  WARN 19476 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-20T16:07:46.209+09:00 DEBUG 19476 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
-2025-11-20T16:07:46.382+09:00 DEBUG 19476 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-20T16:07:46.552+09:00 DEBUG 19476 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-20T16:07:47.029+09:00  INFO 19476 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-20T16:07:47.151+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-20T16:07:47.229+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-20T16:07:47.261+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 18.375 seconds (process running for 20.084)
-2025-11-20T16:12:55.894+09:00  INFO 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-20T16:12:55.909+09:00  INFO 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-20T16:12:55.914+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-20T16:12:55.914+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-20T16:12:55.914+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-20T16:12:55.950+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@f65f23d
-2025-11-20T16:12:55.950+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7822b334
-2025-11-20T16:12:55.961+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-20T16:12:55.964+09:00  INFO 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 52 ms
-2025-11-20T16:15:11.974+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/test/upload", parameters={multipart}
-2025-11-20T16:15:12.090+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UploadController#uploadTest(MultipartFile)
-2025-11-20T16:15:14.947+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
-2025-11-20T16:15:14.993+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-11-20T16:15:15.002+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
-2025-11-20T16:15:15.018+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [software.amazon.awssdk.services.s3.model.S3Exception: User: arn:aws:iam::642570498523:user/user1 is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::runit-bucket/test/6d879fe6-c892-4f9a-96b6-a389c5099e8f-다운로드.jpg" because no identity-based policy allows the s3:PutObject action (Service: S3, Status Code: 403, Request ID: R7Z6NEFQ21VAG11F, Extended Request ID: cLSnM9tzuhHFjHCfLog4JHKFR0Eq5w+UGTMpG38WKNW8yW/oVnq4hiu7ayLd4N8+mvnjYqZPAZMDJ00Kx+5AwaCCktJwfyozUiFnBy3RjSI=)]
-2025-11-20T16:15:15.035+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-11-20T16:18:50.743+09:00  INFO 19476 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-11-20T16:18:50.781+09:00  INFO 19476 --- [demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-20T16:18:50.831+09:00  INFO 19476 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-20T16:18:51.017+09:00  INFO 19476 --- [demo] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:18:51.047+09:00  INFO 19476 --- [demo] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-20T16:18:51.096+09:00  INFO 19476 --- [demo] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-20T16:18:51.612+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 19476 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-20T16:18:51.612+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-20T16:18:53.601+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-20T16:18:53.958+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 346 ms. Found 6 JPA repository interfaces.
-2025-11-20T16:18:54.928+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-20T16:18:54.937+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-20T16:18:54.942+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-20T16:18:55.135+09:00  INFO 19476 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-20T16:18:55.135+09:00  INFO 19476 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3491 ms
-2025-11-20T16:18:55.473+09:00  INFO 19476 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-20T16:18:55.505+09:00  INFO 19476 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-20T16:18:55.568+09:00  INFO 19476 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-20T16:18:55.576+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-11-20T16:18:59.009+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2213b0ad
-2025-11-20T16:18:59.012+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-11-20T16:18:59.385+09:00  INFO 19476 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-20T16:19:00.667+09:00  INFO 19476 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-20T16:19:03.606+09:00  INFO 19476 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:19:04.656+09:00  WARN 19476 --- [demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [C:\Dev\CentralServer\build\classes\java\main\com\centralserver\demo\api\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [C:\Dev\CentralServer\build\classes\java\main\com\centralserver\demo\domain\user\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-11-20T16:19:04.656+09:00  INFO 19476 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:19:04.660+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-11-20T16:19:05.132+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2025-11-20T16:19:05.134+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-11-20T16:19:05.165+09:00  INFO 19476 --- [demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-11-20T16:19:05.349+09:00 ERROR 19476 --- [demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 1 of constructor in com.centralserver.demo.domain.user.service.UserService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
-
-2025-11-20T16:19:07.671+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 19476 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-20T16:19:07.671+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-20T16:19:09.069+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-20T16:19:09.348+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 275 ms. Found 6 JPA repository interfaces.
-2025-11-20T16:19:09.962+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-20T16:19:09.967+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-20T16:19:09.967+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-20T16:19:10.136+09:00  INFO 19476 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2025-11-20T16:19:10.136+09:00  INFO 19476 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2457 ms
-2025-11-20T16:19:10.369+09:00  INFO 19476 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-20T16:19:10.382+09:00  INFO 19476 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-20T16:19:10.422+09:00  INFO 19476 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-20T16:19:10.429+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-11-20T16:19:13.280+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e424397
-2025-11-20T16:19:13.282+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-11-20T16:19:13.443+09:00  INFO 19476 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-20T16:19:15.342+09:00  INFO 19476 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-20T16:19:18.863+09:00  INFO 19476 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:19:19.879+09:00  INFO 19476 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-20T16:19:19.911+09:00  WARN 19476 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-20T16:19:20.054+09:00 DEBUG 19476 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
-2025-11-20T16:19:20.227+09:00 DEBUG 19476 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-20T16:19:20.293+09:00 DEBUG 19476 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-20T16:19:20.638+09:00  INFO 19476 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-20T16:19:20.679+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-20T16:19:20.779+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-20T16:19:20.793+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 13.219 seconds (process running for 713.615)
-2025-11-20T16:19:20.809+09:00  INFO 19476 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-11-20T16:21:31.452+09:00  INFO 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-20T16:21:31.455+09:00  INFO 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-20T16:21:31.455+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-20T16:21:31.457+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-20T16:21:31.457+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-20T16:21:31.463+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a9b2b
-2025-11-20T16:21:31.463+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2a55972c
-2025-11-20T16:21:31.465+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-20T16:21:31.465+09:00  INFO 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2025-11-20T16:21:31.496+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/test/upload", parameters={multipart}
-2025-11-20T16:21:31.504+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UploadController#uploadTest(MultipartFile)
-2025-11-20T16:21:32.352+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
-2025-11-20T16:21:32.356+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-11-20T16:21:32.359+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
-2025-11-20T16:21:32.367+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [software.amazon.awssdk.services.s3.model.S3Exception: The bucket does not allow ACLs (Service: S3, Status Code: 400, Request ID: SP5XFMATYQ241TV2, Extended Request ID: 7C/A42LkiNHyqpuRZ9a38xiO0AG7lD++mung306qWwgwNwJoFOfJbiLhI9iGO5whmjW4m6KIFVGgOkyNMj+ouF1Pz3Qel84ecYoutulHgT0=)]
-2025-11-20T16:21:32.370+09:00 DEBUG 19476 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-11-20T16:22:10.909+09:00  INFO 19476 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-11-20T16:22:10.912+09:00  INFO 19476 --- [demo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-20T16:22:10.952+09:00  INFO 19476 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-20T16:22:10.966+09:00  INFO 19476 --- [demo] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:22:10.970+09:00  INFO 19476 --- [demo] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2025-11-20T16:22:10.978+09:00  INFO 19476 --- [demo] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2025-11-20T16:22:11.321+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 19476 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-20T16:22:11.328+09:00  INFO 19476 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-20T16:22:12.681+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-20T16:22:12.848+09:00  INFO 19476 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161 ms. Found 6 JPA repository interfaces.
-2025-11-20T16:22:13.581+09:00  INFO 19476 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-20T16:22:13.585+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-20T16:22:13.587+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-20T16:22:13.733+09:00  INFO 19476 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2025-11-20T16:22:13.733+09:00  INFO 19476 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2387 ms
-2025-11-20T16:22:13.977+09:00  INFO 19476 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-20T16:22:14.002+09:00  INFO 19476 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-20T16:22:14.128+09:00  INFO 19476 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-20T16:22:14.135+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2025-11-20T16:22:16.424+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a36cec2
-2025-11-20T16:22:16.424+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2025-11-20T16:22:16.597+09:00  INFO 19476 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-20T16:22:16.964+09:00  INFO 19476 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-20T16:22:19.640+09:00  INFO 19476 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:22:19.975+09:00  WARN 19476 --- [demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [C:\Dev\CentralServer\build\classes\java\main\com\centralserver\demo\api\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [C:\Dev\CentralServer\build\classes\java\main\com\centralserver\demo\domain\user\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-11-20T16:22:19.975+09:00  INFO 19476 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:22:19.975+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2025-11-20T16:22:20.050+09:00  INFO 19476 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-2025-11-20T16:22:20.051+09:00  INFO 19476 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-11-20T16:22:20.055+09:00  INFO 19476 --- [demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-11-20T16:22:20.068+09:00 ERROR 19476 --- [demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 1 of constructor in com.centralserver.demo.domain.user.service.UserService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
-
-2025-11-20T16:23:14.075+09:00  INFO 13512 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 13512 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-20T16:23:14.077+09:00  INFO 13512 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-20T16:23:14.158+09:00  INFO 13512 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-20T16:23:14.158+09:00  INFO 13512 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-20T16:23:15.620+09:00  INFO 13512 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-20T16:23:16.015+09:00  INFO 13512 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 385 ms. Found 6 JPA repository interfaces.
-2025-11-20T16:23:17.286+09:00  INFO 13512 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-20T16:23:17.310+09:00  INFO 13512 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-20T16:23:17.310+09:00  INFO 13512 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-20T16:23:17.415+09:00  INFO 13512 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-20T16:23:17.415+09:00  INFO 13512 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3220 ms
-2025-11-20T16:23:17.691+09:00  INFO 13512 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-20T16:23:17.806+09:00  INFO 13512 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-20T16:23:17.853+09:00  INFO 13512 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-20T16:23:18.391+09:00  INFO 13512 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-20T16:23:18.471+09:00  INFO 13512 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-20T16:23:20.882+09:00  INFO 13512 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45308e95
-2025-11-20T16:23:20.897+09:00  INFO 13512 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-20T16:23:21.452+09:00  INFO 13512 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-20T16:23:23.021+09:00  INFO 13512 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-20T16:23:26.121+09:00  INFO 13512 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:23:28.412+09:00  INFO 13512 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-20T16:23:28.454+09:00  WARN 13512 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-20T16:23:28.708+09:00 DEBUG 13512 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
-2025-11-20T16:23:28.875+09:00 DEBUG 13512 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-20T16:23:29.003+09:00 DEBUG 13512 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-20T16:23:29.366+09:00  INFO 13512 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-20T16:23:29.446+09:00  INFO 13512 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-20T16:23:29.545+09:00  INFO 13512 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-20T16:23:29.566+09:00  INFO 13512 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 16.24 seconds (process running for 17.732)
-2025-11-20T16:24:07.867+09:00  INFO 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-20T16:24:07.870+09:00  INFO 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-20T16:24:07.873+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-20T16:24:07.873+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-20T16:24:07.873+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-20T16:24:07.883+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48bf9fc0
-2025-11-20T16:24:07.887+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@37991ccb
-2025-11-20T16:24:07.891+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-20T16:24:07.892+09:00  INFO 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
-2025-11-20T16:24:08.597+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/test/upload", parameters={multipart}
-2025-11-20T16:24:08.688+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UploadController#uploadTest(MultipartFile)
-2025-11-20T16:24:12.097+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-20T16:24:12.120+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [UploadResponse[url=https://runit-bucket.s3.ap-southeast-2.amazonaws.com/test/5a2a0cf1-a5b7-45ff-8157 (truncated)...]
-2025-11-20T16:24:12.173+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-20T16:30:55.201+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/test/upload", parameters={multipart}
-2025-11-20T16:30:55.243+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UploadController#uploadTest(MultipartFile)
-2025-11-20T16:30:56.750+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-20T16:30:56.752+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [UploadResponse[url=https://runit-bucket.s3.ap-southeast-2.amazonaws.com/test/e67440c0-a7eb-4c6d-8248 (truncated)...]
-2025-11-20T16:30:56.776+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-20T16:31:42.472+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/test/upload", parameters={multipart}
-2025-11-20T16:31:42.549+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.centralserver.demo.api.advice.CustomControllerAdvice#handleRuntimeException(RuntimeException)
-2025-11-20T16:31:42.558+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-11-20T16:31:42.560+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["잘못된 요청입니다."]
-2025-11-20T16:31:42.583+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
-2025-11-20T16:31:42.583+09:00 DEBUG 13512 --- [demo] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-11-20T16:32:56.366+09:00  INFO 13512 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-20T16:32:56.395+09:00  INFO 13512 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-20T16:32:56.474+09:00  INFO 13512 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:32:56.474+09:00  INFO 13512 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-20T16:32:56.516+09:00  INFO 13512 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-20T16:33:16.557+09:00  INFO 16368 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Starting DemoApplication using Java 21.0.7 with PID 16368 (C:\Dev\CentralServer\build\classes\java\main started by parkj in C:\Dev\CentralServer)
-2025-11-20T16:33:16.565+09:00  INFO 16368 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-11-20T16:33:16.803+09:00  INFO 16368 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-20T16:33:16.805+09:00  INFO 16368 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-20T16:33:21.069+09:00  INFO 16368 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-20T16:33:22.043+09:00  INFO 16368 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 940 ms. Found 6 JPA repository interfaces.
-2025-11-20T16:33:25.400+09:00  INFO 16368 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-20T16:33:25.473+09:00  INFO 16368 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-20T16:33:25.477+09:00  INFO 16368 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-11-20T16:33:25.762+09:00  INFO 16368 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-20T16:33:25.770+09:00  INFO 16368 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8907 ms
-2025-11-20T16:33:26.602+09:00  INFO 16368 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-20T16:33:26.885+09:00  INFO 16368 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-11-20T16:33:27.036+09:00  INFO 16368 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-20T16:33:28.551+09:00  INFO 16368 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-20T16:33:28.705+09:00  INFO 16368 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-20T16:33:33.457+09:00  INFO 16368 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e848e36
-2025-11-20T16:33:33.474+09:00  INFO 16368 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-20T16:33:34.495+09:00  INFO 16368 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.42
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-11-20T16:33:38.868+09:00  INFO 16368 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-20T16:33:42.562+09:00  INFO 16368 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:33:45.369+09:00  INFO 16368 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-11-20T16:33:45.409+09:00  WARN 16368 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-20T16:33:45.735+09:00 DEBUG 16368 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
-2025-11-20T16:33:45.888+09:00 DEBUG 16368 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-11-20T16:33:46.071+09:00 DEBUG 16368 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-11-20T16:33:46.509+09:00  INFO 16368 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-20T16:33:46.635+09:00  INFO 16368 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-20T16:33:46.727+09:00  INFO 16368 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-20T16:33:46.759+09:00  INFO 16368 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 32.47 seconds (process running for 36.41)
-2025-11-20T16:34:32.665+09:00  INFO 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-20T16:34:32.667+09:00  INFO 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-20T16:34:32.667+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-11-20T16:34:32.667+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-11-20T16:34:32.667+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-11-20T16:34:32.674+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@115c309e
-2025-11-20T16:34:32.675+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f6a4edb
-2025-11-20T16:34:32.675+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-11-20T16:34:32.675+09:00  INFO 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2025-11-20T16:34:33.419+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/test/upload", parameters={multipart}
-2025-11-20T16:34:33.584+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.UploadController#uploadTest(MultipartFile)
-2025-11-20T16:34:37.526+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-11-20T16:34:37.534+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [UploadResponse[url=https://runit-bucket.s3.ap-southeast-2.amazonaws.com/test/62488316-0491-4a48-a298 (truncated)...]
-2025-11-20T16:34:37.584+09:00 DEBUG 16368 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-11-20T16:36:09.731+09:00  INFO 16368 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-20T16:36:09.745+09:00  INFO 16368 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-20T16:36:09.823+09:00  INFO 16368 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-20T16:36:09.825+09:00  INFO 16368 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-20T16:36:09.846+09:00  INFO 16368 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-21T13:40:08.491+09:00  INFO 22324 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-21T13:40:11.639+09:00  INFO 22324 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-21T13:40:13.809+09:00  INFO 22324 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-11-21T13:40:13.843+09:00  WARN 22324 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-21T13:40:14.094+09:00 DEBUG 22324 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 29 mappings in 'requestMappingHandlerMapping'
+2025-11-21T13:40:14.219+09:00 DEBUG 22324 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-21T13:40:14.365+09:00 DEBUG 22324 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-21T13:40:14.798+09:00  INFO 22324 --- [demo] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-11-21T13:40:14.906+09:00  INFO 22324 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-21T13:40:15.004+09:00  INFO 22324 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-21T13:40:15.035+09:00  INFO 22324 --- [demo] [restartedMain] com.centralserver.demo.DemoApplication   : Started DemoApplication in 20.38 seconds (process running for 24.319)
+2025-11-21T13:40:26.603+09:00  INFO 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-21T13:40:26.603+09:00  INFO 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-21T13:40:26.603+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-11-21T13:40:26.603+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-11-21T13:40:26.603+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-11-21T13:40:26.611+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18077ba9
+2025-11-21T13:40:26.613+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@54275cc
+2025-11-21T13:40:26.615+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-21T13:40:26.615+09:00  INFO 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2025-11-21T13:40:27.348+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/records/img", parameters={}
+2025-11-21T13:40:27.356+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RunRecordController#createRecordWithImg(RunRecordRequestDTO)
+2025-11-21T13:40:27.680+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.record.dto.RunRecordRequestDTO@581f5133]
+2025-11-21T13:40:33.083+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21T13:40:33.098+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponseDTO(success=true, data=com.centralserver.demo.domain.record.dto.RunRecordResponseWithImgD (truncated)...]
+2025-11-21T13:40:33.142+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-21T13:44:59.545+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/records/img", parameters={}
+2025-11-21T13:44:59.560+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.centralserver.demo.api.controller.RunRecordController#createRecordWithImg(RunRecordRequestDTO)
+2025-11-21T13:44:59.606+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.centralserver.demo.domain.record.dto.RunRecordRequestDTO@4d3b1631]
+2025-11-21T13:45:03.382+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21T13:45:03.382+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponseDTO(success=true, data=com.centralserver.demo.domain.record.dto.RunRecordResponseWithImgD (truncated)...]
+2025-11-21T13:45:03.393+09:00 DEBUG 22324 --- [demo] [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-21T13:47:24.793+09:00  INFO 22324 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-21T13:47:24.807+09:00  INFO 22324 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-21T13:47:24.876+09:00  INFO 22324 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-21T13:47:24.881+09:00  INFO 22324 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-21T13:47:24.892+09:00  INFO 22324 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

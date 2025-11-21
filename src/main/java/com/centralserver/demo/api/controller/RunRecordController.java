@@ -37,6 +37,18 @@ public class RunRecordController {
                 .body(ApiResponseDTO.success(saved));
     }
 
+    @PostMapping("/img")
+    public ResponseEntity<ApiResponseDTO<RunRecordResponseWithImgDTO>> createRecordWithImg(
+            @RequestBody RunRecordRequestDTO request
+    ) {
+
+        RunRecordResponseWithImgDTO saved = runRecordService.createRecordWithImg(request);
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(ApiResponseDTO.success(saved));
+    }
+
     /** =========================
      *   2) 단일 기록 조회 (Read One)
      *  GET /record/{id}

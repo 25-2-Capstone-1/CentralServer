@@ -35,7 +35,29 @@ public class S3Service {
                 RequestBody.fromBytes(file.getBytes())
         );
 
-        // 리전 기반으로 자동 URL 생성
+        return generateUrl(key);
+    }
+
+    // 🔹 추가: byte[] 이미지 업로드 (Google Maps static image 용)
+    public String uploadBytes(byte[] bytes, String key, String contentType) {
+
+        PutObjectRequest request = PutObjectRequest.builder()
+                .bucket(bucket)
+                .key(key)
+                .contentType(contentType)
+                .build();
+
+        s3Client.putObject(
+                request,
+                RequestBody.fromBytes(bytes)
+        );
+
+        return generateUrl(key);
+    }
+
+    // 🔹 URL 생성 공통 로직
+    private String generateUrl(String key) {
         return String.format("https://%s.s3.%s.amazonaws.com/%s", bucket, region, key);
     }
+
 }

@@ -35,6 +35,10 @@ public class RunRecordEntity {
     @JoinColumn(name = "recommended_route_id")
     private RecommendedRoute recommendedRoute;
 
+    /** 레코드 이미지 저장 **/
+    @Column(nullable = true)
+    private String imageUrl; // S3 URL
+
     /** 기본 정보 **/
     @Column(nullable = false, length = 100)
     private String title;                 // 러닝 제목
