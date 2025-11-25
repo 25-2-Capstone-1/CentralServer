@@ -1,4 +1,11 @@
 FROM eclipse-temurin:21-jre
+
+# Accept build argument
+ARG OPENAI_API_KEY
+
+# Set as environment variable
+ENV OPENAI_API_KEY=${OPENAI_API_KEY}
+
 WORKDIR /app
 COPY build/libs/*.jar app.jar
 EXPOSE 8080
