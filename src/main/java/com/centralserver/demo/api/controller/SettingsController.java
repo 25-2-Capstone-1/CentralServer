@@ -1,5 +1,7 @@
 package com.centralserver.demo.api.controller;
 
+import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsRequestDTO;
+import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsResponseDTO;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsRequestDTO;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO;
 import com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsRequestDTO;
@@ -43,5 +45,19 @@ public class SettingsController {
             @RequestBody TimerSettingsRequestDTO dto
     ) {
         return settingsService.updateTimerSettings(dto);
+    }
+
+    // 🔵 5) 디테일 설정 조회
+    @GetMapping("/detail")
+    public DetailSettingsResponseDTO getDetailSettings() {
+        return settingsService.getDetailSettings();
+    }
+
+    // 🟣 6) 디테일 설정 수정
+    @PutMapping("/detail")
+    public DetailSettingsResponseDTO updateDetailSettings(
+            @RequestBody DetailSettingsRequestDTO dto
+    ) {
+        return settingsService.updateDetailSettings(dto);
     }
 }
