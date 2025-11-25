@@ -179,6 +179,16 @@ public class SettingsService {
         return getDetailSettings();
     }
 
+    // 첫 로그인 판별
+    public boolean isFirstLogin(UserEntity user) {
+        DetailSettings detail = detailSettingsRepository.findByUser(user)
+                .orElseThrow(() -> new RuntimeException("디테일 정보 없음"));
+
+        return detail.getGender() == null &&
+                detail.getHeight() == null &&
+                detail.getWeight() == null;
+    }
+
     @Transactional
     public void deleteSettingsByUser(UserEntity user) {
 

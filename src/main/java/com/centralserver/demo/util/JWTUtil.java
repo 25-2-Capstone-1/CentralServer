@@ -56,7 +56,7 @@ public class JWTUtil {
     }
 
     // JWT(Access/Refresh) 생성
-    public static String createJWT(String userEmail, String role, Boolean isAccess) {
+    public static String createJWT(String userEmail, String role, Boolean isAccess, Boolean firstLogin) {
 
         long now = System.currentTimeMillis();
         long expiry = isAccess ? accessTokenExpiresIn : refreshTokenExpiresIn;
@@ -66,10 +66,21 @@ public class JWTUtil {
                 .claim("sub", userEmail)
                 .claim("role", role)
                 .claim("type", type)
+                .claim("firstLogin", firstLogin)   // 🔥 추가된 claim
                 .issuedAt(new Date(now))
                 .expiration(new Date(now + expiry))
                 .signWith(secretKey)
                 .compact();
+    }
+
+    // 첫번째 로그인인지 확인하기 위함 (로그인으로 토큰이 재발급 되어도 기존의 FirstLogin 값을 유지)
+    public static Boolean getFirstLogin(String token) {
+        return Jwts.parser()
+                .verifyWith(secretKey)
+                .build()
+                .parseSignedClaims(token)
+                .getPayload()
+                .get("firstLogin", Boolean.class);
     }
 
 }
