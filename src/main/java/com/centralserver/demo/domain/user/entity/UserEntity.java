@@ -35,9 +35,6 @@ public class UserEntity {
     @Column(name = "nickname", unique = true, nullable = false)
     private String nickname;
 
-    @Column(name = "gender", nullable = false)
-    private String gender;
-
     @Column(name = "phoneNumber")
     private String phoneNumber;
 

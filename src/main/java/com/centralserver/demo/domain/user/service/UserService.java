@@ -52,7 +52,6 @@ public class UserService implements UserDetailsService {
                 .password(passwordEncoder.encode(dto.getPassword()))
                 .username(dto.getUsername())
                 .nickname(dto.getNickname())
-                .gender(dto.getGender())
                 .phoneNumber(dto.getPhoneNumber())
                 .isLock(false)
                 .roleType(UserRoleType.USER)
@@ -151,7 +150,7 @@ public class UserService implements UserDetailsService {
         UserEntity entity = userRepository.findByUserEmailAndIsLock(userEmail, false)
                 .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다: " + userEmail));
 
-        return new UserResponseDTO(entity.getId(), userEmail, entity.getUsername(), entity.getNickname(), entity.getGender(), entity.getPhoneNumber());
+        return new UserResponseDTO(entity.getId(), userEmail, entity.getUsername(), entity.getNickname(), entity.getPhoneNumber());
     }
 
     @Transactional
