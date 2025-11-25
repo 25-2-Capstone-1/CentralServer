@@ -18,10 +18,4 @@ public class DemoApplication {
         System.out.println("Central Server is starting...DemoApplication.java");
         SpringApplication.run(DemoApplication.class, args);
     }
-
-//    @Bean
-//    CommandLineRunner init(RouteService routeService) {
-//        return args -> {routeService.createSampleRoute();};
-//    }
-
 }
