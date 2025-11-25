@@ -11,7 +11,5 @@ public interface TimerSettingsRepository extends JpaRepository<TimerSettings, Lo
     // 유저별 조회
     Optional<TimerSettings> findByUser(UserEntity user);
 
-    // userId 기반 조회
-    Optional<TimerSettings> findByUserId(Long userId);
     void deleteByUser(UserEntity user);
 }

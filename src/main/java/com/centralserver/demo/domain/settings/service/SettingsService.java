@@ -1,5 +1,9 @@
 package com.centralserver.demo.domain.settings.service;
 
+import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsRequestDTO;
+import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsResponseDTO;
+import com.centralserver.demo.domain.settings.detail.entity.DetailSettings;
+import com.centralserver.demo.domain.settings.detail.repository.DetailSettingsRepository;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsRequestDTO;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO;
 import com.centralserver.demo.domain.settings.timer.entity.CountdownType;
@@ -24,6 +28,7 @@ public class SettingsService {
 
     private final VoiceSettingsRepository voiceSettingsRepository;
     private final TimerSettingsRepository timerSettingsRepository;
+    private final DetailSettingsRepository detailSettingsRepository;
     private final UserRepository userRepository;
 
     // ---------------------------------------------------
@@ -62,6 +67,16 @@ public class SettingsService {
                 .build();
 
         timerSettingsRepository.save(timer);
+
+        // 기본 Detail Settings
+        DetailSettings detail = DetailSettings.builder()
+                .user(user)
+                .gender(null)     // 아직 입력 안 한 상태
+                .height(null)     // 기본값 없음
+                .weight(null)     // 기본값 없음
+                .build();
+
+        detailSettingsRepository.save(detail);
     }
 
     // ---------------------------------------------------
@@ -136,6 +151,34 @@ public class SettingsService {
         return getTimerSettings();
     }
 
+    @Transactional(readOnly = true)
+    public DetailSettingsResponseDTO getDetailSettings() {
+        UserEntity user = getCurrentUser();
+        DetailSettings settings = detailSettingsRepository.findByUser(user)
+                .orElseThrow(() -> new RuntimeException("상세 설정이 없습니다."));
+
+        return DetailSettingsResponseDTO.builder()
+                .gender(settings.getGender())
+                .height(settings.getHeight())
+                .weight(settings.getWeight())
+                .build();
+    }
+
+    @Transactional
+    public DetailSettingsResponseDTO updateDetailSettings(DetailSettingsRequestDTO dto) {
+        UserEntity user = getCurrentUser();
+        DetailSettings settings = detailSettingsRepository.findByUser(user)
+                .orElseThrow(() -> new RuntimeException("상세 설정이 없습니다."));
+
+        settings.setGender(dto.getGender());
+        settings.setHeight(dto.getHeight());
+        settings.setWeight(dto.getWeight());
+
+        detailSettingsRepository.save(settings);
+
+        return getDetailSettings();
+    }
+
     @Transactional
     public void deleteSettingsByUser(UserEntity user) {
 
@@ -144,5 +187,8 @@ public class SettingsService {
 
         // 2) Timer Settings 삭제
         timerSettingsRepository.deleteByUser(user);
+
+        // 3) Detail Settings 삭제
+        detailSettingsRepository.deleteByUser(user);
     }
 }
