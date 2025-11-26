@@ -2,6 +2,7 @@ package com.centralserver.demo.api.controller;
 
 import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsRequestDTO;
 import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsResponseDTO;
+import com.centralserver.demo.domain.settings.pace.dto.PaceRecommendationResponseDTO;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsRequestDTO;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO;
 import com.centralserver.demo.domain.settings.voice.dto.VoiceSettingsRequestDTO;
@@ -60,4 +61,11 @@ public class SettingsController {
     ) {
         return settingsService.updateDetailSettings(dto);
     }
+
+    // 🔵 7) 페이스 추천 조회
+    @GetMapping("/pace")
+    public PaceRecommendationResponseDTO getPaceRecommendation() {
+        return settingsService.getPaceRecommendation();
+    }
+
 }
