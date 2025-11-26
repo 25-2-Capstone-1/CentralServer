@@ -22,6 +22,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class SettingsService {
@@ -181,9 +183,17 @@ public class SettingsService {
 
     // 첫 로그인 판별
     public boolean isFirstLogin(UserEntity user) {
-        DetailSettings detail = detailSettingsRepository.findByUser(user)
-                .orElseThrow(() -> new RuntimeException("디테일 정보 없음"));
 
+        Optional<DetailSettings> detailOpt = detailSettingsRepository.findByUser(user);
+
+        // 🔵 레코드 자체가 없으면 → 무조건 첫 로그인
+        if (detailOpt.isEmpty()) {
+            return true;
+        }
+
+        DetailSettings detail = detailOpt.get();
+
+        // 🔵 레코드는 있으나 값이 모두 null이면 첫 로그인
         return detail.getGender() == null &&
                 detail.getHeight() == null &&
                 detail.getWeight() == null;
