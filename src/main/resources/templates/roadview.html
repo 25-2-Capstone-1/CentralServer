@@ -11,9 +11,7 @@
     </style>
 
     <!-- Kakao Map SDK -->
-    <script type="text/javascript"
-            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=156246ec2b76864e4e616a3a62ef704a&libraries=services">
-    </script>
+    <script th:src="@{'//dapi.kakao.com/v2/maps/sdk.js?appkey=' + ${kakaoApiKey} + '&libraries=services'}"></script>
 </head>
 
 <body>
