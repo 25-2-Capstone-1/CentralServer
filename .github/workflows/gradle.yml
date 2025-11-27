@@ -32,7 +32,11 @@ jobs:
       - name: Build and push Docker image
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          KAKAO_API_KEY: ${{ secrets.KAKAO_API_KEY }}
         run: |
-          docker build --build-arg OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
+          docker build \
+            --build-arg OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
+            --build-arg KAKAO_API_KEY=${{ secrets.KAKAO_API_KEY }} \
             -t ${{ secrets.DOCKERHUB_USERNAME }}/centralserver:latest .
+          
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/centralserver:latest
