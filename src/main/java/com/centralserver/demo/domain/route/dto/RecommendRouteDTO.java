@@ -26,4 +26,6 @@ public class RecommendRouteDTO {
 
     private String difficulty;
     private String description;
+
+    private List<RoadviewItem> roadviews;
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kakao Roadview</title>
+    <style>
+        #roadview {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+
+    <!-- Kakao Map SDK -->
+    <script th:src="@{'//dapi.kakao.com/v2/maps/sdk.js?appkey=' + ${kakaoApiKey} + '&libraries=services'}"></script>
+</head>
+
+<body>
+<div id="roadview"></div>
+
+<script>
+    const LAT = parseFloat("[[${lat}]]");
+    const LNG = parseFloat("[[${lng}]]");
+
+    // 로드뷰의 DOM 객체
+    const container = document.getElementById('roadview');
+    const roadview = new kakao.maps.Roadview(container);
+
+    // 로드뷰 helper (가장 가까운 파노라마 ID 찾는 도구)
+    const roadviewClient = new kakao.maps.RoadviewClient();
+
+    // 입력된 좌표 기준으로 가장 가까운 파노라마 ID 검색
+    const position = new kakao.maps.LatLng(LAT, LNG);
+
+    roadviewClient.getNearestPanoId(position, 50, function(panoId) {
+        if (panoId) {
+            // 로드뷰 표시
+            roadview.setPanoId(panoId, position);
+        } else {
+            container.innerHTML = "<h3>해당 위치 주변에 로드뷰가 없습니다.</h3>";
+        }
+    });
+</script>
+
+</body>
+</html>

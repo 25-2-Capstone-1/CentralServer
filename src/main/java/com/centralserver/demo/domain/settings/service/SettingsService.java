@@ -4,6 +4,7 @@ import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsRequestDT
 import com.centralserver.demo.domain.settings.detail.dto.DetailSettingsResponseDTO;
 import com.centralserver.demo.domain.settings.detail.entity.DetailSettings;
 import com.centralserver.demo.domain.settings.detail.repository.DetailSettingsRepository;
+import com.centralserver.demo.domain.settings.pace.dto.PaceRecommendationResponseDTO;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsRequestDTO;
 import com.centralserver.demo.domain.settings.timer.dto.TimerSettingsResponseDTO;
 import com.centralserver.demo.domain.settings.timer.entity.CountdownType;
@@ -16,6 +17,7 @@ import com.centralserver.demo.domain.settings.voice.entity.VoiceType;
 import com.centralserver.demo.domain.settings.voice.repository.VoiceSettingsRepository;
 import com.centralserver.demo.domain.user.entity.UserEntity;
 import com.centralserver.demo.domain.user.repository.UserRepository;
+import com.centralserver.demo.util.PaceCalculator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -32,6 +34,8 @@ public class SettingsService {
     private final TimerSettingsRepository timerSettingsRepository;
     private final DetailSettingsRepository detailSettingsRepository;
     private final UserRepository userRepository;
+
+    private final PaceCalculator paceCalculator;
 
     // ---------------------------------------------------
     // 🔵 현재 로그인 유저 가져오기
@@ -210,5 +214,21 @@ public class SettingsService {
 
         // 3) Detail Settings 삭제
         detailSettingsRepository.deleteByUser(user);
+    }
+
+    // 사용자의 세션 정보를 바탕으로 난이도별 pace 추천
+    public PaceRecommendationResponseDTO getPaceRecommendation() {
+        UserEntity user = getCurrentUser();  // JWT 기반 사용자 조회 로직
+
+        DetailSettings settings = detailSettingsRepository.findByUser(user)
+                .orElseThrow(() -> new RuntimeException("상세 설정이 없습니다."));
+
+        DetailSettingsResponseDTO userDetail = DetailSettingsResponseDTO.builder()
+                .gender(settings.getGender())
+                .height(settings.getHeight())
+                .weight(settings.getWeight())
+                .build();
+
+        return paceCalculator.calculatePace(userDetail);
     }
 }

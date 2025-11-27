@@ -125,9 +125,13 @@ public class SecurityConfig {
                         .requestMatchers("/jwt/exchange", "/jwt/refresh").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user/exist", "/user").permitAll()
 
+                        .requestMatchers("/roadview", "/roadview/**").permitAll()
+                        // .requestMatchers(HttpMethod.POST, "/route/recommend").permitAll()
+
                         .requestMatchers(HttpMethod.GET, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.PUT, "/user").hasRole(UserRoleType.USER.name())
                         .requestMatchers(HttpMethod.DELETE, "/user").hasRole(UserRoleType.USER.name())
+
                         .requestMatchers(HttpMethod.POST, "/route/recommend").hasRole(UserRoleType.USER.name())
 
                         .requestMatchers("/record", "/record/**")
@@ -138,6 +142,7 @@ public class SecurityConfig {
 
                         .requestMatchers(HttpMethod.GET, "/user/**").hasRole(UserRoleType.USER.name())
                         .anyRequest().authenticated()
+
                 );
 
         // 예외 처리
